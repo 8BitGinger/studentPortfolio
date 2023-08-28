@@ -27,7 +27,7 @@ section {
     display:flex;
     flex-wrap: wrap;
     flex-direction: row;
-    padding-right: 200px;
+    padding-right: 100px;
     padding-left: 40px;
 }
 
@@ -38,37 +38,35 @@ font-family:'Arvo', serif;
 list-style-type: square;
 list-style-position: inside;
 color:white;
-height:300px;
+height:800px;
 width:160px;
-background-color: rgba(100,147,167,1);
+background-color: rgb(11, 206, 240);
 font-style: italic;
 }
 
 /*this needs major work.  Right now it does not flow with media query*/
 h3 {
-    color: pink;
-    position: absolute;
-    top: 50%;
-    left: 20%;
-    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255);
+    position: relative;
+    font-size: medium;
 }
+
 
 /* The user's cursor is positioned over the element */
 img:hover {
-    background-color: #772014;
-    background-size: 250px;
+    box-shadow: inset 0px 0px 8px blue, 0 0 4px blue;
   }
   
   /* The user is actively pressing down on the element */
   img:active {
-    font-size: 180%;
-    box-shadow: 0 0 10px #000 inset;
+    font-size: 100%;
+    box-shadow: 0 0 100px #000 inset;
   }
   
   /* The element is currently in focus, either by tabbing to or clicking on it */
   img:focus {
     outline: none;
-    border-color: #8ac4ff;
+    border-color: #e60a0a;          
   }
 
 .header {
@@ -89,10 +87,12 @@ img:hover {
 }
 
 .banner h2 {
-  position:sticky;
+  float:inline-end;
+    text-align: right;
   color:rgb(120, 187, 220);
   font-size:30px;
   font-family: cursive;
+  font-style: italic;
 }
 
 .bannerimage {
@@ -113,7 +113,7 @@ img:hover {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border: 3px solid rgb(184, 192, 205);
+    border: 5px solid rgb(11, 206, 240);
 }
 
 .gallery__item--1 {
@@ -149,4 +149,29 @@ img:hover {
     grid-column-end: 9;
     grid-row-start: 8;
     grid-row-end: 10;
+}
+
+.floatbox {
+    display:flex;
+    background-color: rgb(11, 206, 240);
+    width: fit-content;
+    position: relative;
+    margin-top:-150px;
+    padding: 10px;
+
+}
+
+.floatbox2 {
+    display: flex;
+    background-color: rgb(11, 206, 240);
+    width: fit-content;
+    position: relative;
+    margin-top:-100px;
+    padding: 10px;
+
+}
+
+.sidebar li{
+    display:flex;
+    flex-wrap: wrap;
 }
