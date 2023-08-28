@@ -3,52 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
     <title>Student Portfolio</title>
 </head>
 <body>
     <header class="header">
-        <h1>  Ryan J. Fann <h1>
-        <div class="navheader">
-            <a href="#">About Me</a>
-            <a href="#">Work</a>
-            <a href="#">Contact Me</a>
-            <a href="#">Resume</a>
-        </div>   
+        <h1>  <span style="background-color: rgb(11, 206, 240)"> Ryan J. Fann </span> </h1>
+        <nav>
+          <ul>
+            <li><a href="#aboutme">About Me</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#contactme">Contact Me</a></li>
+            <li><a href="https://www.linkedin.com/in/ryan-fann-16688765/">Resume</a></li>
+          </ul>
+        </nav> 
     </header>
 
     <div class="banner">
-        <img id="bannerimage" src="assets/images/Placeholder_view_vector.svg.png" />
-        <p> Cool SubTitle Over Image HERE </p>
+        <img class="bannerimage" src="assets/images/webbannerv1.png" />
+          <h2> "If we want users to like our software, we should design it to behave like a likable person.  – Alan Cooper </h2>
     </div>
     
-   
+    <aside>
+        <ul class="sidebar">
+            <li>About Me</li>
+            <li>Work</li>
+            <li>Contact Me</li>
+        </ul>
+    </aside>
 
-    <section class ="gallery">
-        <aside>
-            <ul>
-                <li>About Me</li>
-                <li>Work</li>
-                <li>Contact Me</li>
-            </ul>
-        </aside>
+    <p class="aboutmetext" id="aboutme"> Hi, I’m Ryan! I’m a Full-Stack Web Development Student through UTSA.  In a nutshell, I am learning to create webesites that help orginzations address business challenges and meet their needs.  I will be able to manage everything from website navigation to thier UI/UX.  I will have expertise in both front end and back end development.  My main languages are Javascript, HTML/CSS.  I'm a lifelong learner and currently excited about the Bootcamp I am attending.  I love to Binge Netlfix, Listen to Music, Play Video Games, and Code!</p>
 
-        <article class="card"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi labore excepturi quos praesentium porro velit vel error? Exercitationem, ea itaque iure nam provident, ab dicta voluptates deleniti veritatis reiciendis quam.</article>
-        
-        <article class="card">
-            <figure class="item">
-            <img src="assets/images/Live Screenshot.jpg" />
-            </div>
-        </article>
+    <section class ="gallery" id="work">
+      <div class="card" > </div>
+          <figure class="gallery__item gallery__item--1">
+            <a href="https://8bitginger.github.io/challengeone/">
+               <img src="assets/images/Live Screenshot.jpg" class="gallery__img" alt="Live Challenge 1"> </a>
+            <h3 class="floatbox"> Challenge Week 1 <br> Updated working links!</h3>
+          </figure>
+         
+          <figure class="gallery__item gallery__item--2">
+            <a href="http://google.com">
+              <img src="assets/images/—Pngtree—website under construction monitor computer_7649846.png" class="gallery__img" alt="Image 2"> </a>
+            <h3 class="floatbox2"> Floating Text Box 2 <br> undertext </h3>      
+          </figure>
+          
+          <figure class="gallery__item gallery__item--3">
+            <a href="http://google.com">
+              <img src="assets/images/—Pngtree—vector illustration background of website_3540952.jpg" class="gallery__img" alt="Image 3"> </a>
+            <h3 class="floatbox2"> Floating Text Box 3 <br> undertext</h3>
+          </figure>
+         
+          <figure class="gallery__item gallery__item--4">
+            <a href="http://google.com">
+              <img src="assets/images/—Pngtree—vector illustration background of website_3540952.jpg" class="gallery__img" alt="Image 4"> </a>
+            <h3 class="floatbox2"> Floating Text Box 4 <br> undertext</h3>
+          </figure>
+         
+          <figure class="gallery__item gallery__item--5">
+            <a href="http://google.com">
+              <img src="assets/images/—Pngtree—vector illustration background of website_3540952.jpg" class="gallery__img" alt="Image 5"> </a>
+            <h3 class="floatbox2"> Floating Text Box 5 <br> undertext</h3>
+          </figure>
 
-        <article class="card">
-            <img src="assets/images/Placeholder_view_vector.svg.png" />
-        </article>
     </section>
 
-    <section>
-        
-    </section>
+    <footer id="contactme">
+      <a href="tel:210-707-4283">
+        <div> Phone </div>
+      <a href="www.gmail.com">
+          <div> Email </div>
+      <a href="https://github.com/8BitGinger">
+        <div> GitHub</div>
+      <a href="https://facebook.com/ryanfann">
+        <div> Facebook </div>
+      <a href="https://music.apple.com/us/playlist/current-stuff/pl.u-d2b0kMVupBjBG9">
+        <div> Music </div>
+    </footer>
    
 </body>
 </html>
