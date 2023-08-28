@@ -48,12 +48,14 @@ float: left;
 text-align: right;
 font-family:Arial, Helvetica, sans-serif;
 font-size: 25px;
-
 color:white;
 height:1300px;
 width:160px;
-background-color: rgb(11, 206, 240);
+padding-right: 15px;
 font-style: italic;
+border-right: 6px solid rgb(7, 29, 91);
+height: 1300px;
+line-height: 9;
 }
 
 footer {
@@ -64,7 +66,6 @@ justify-content: space-evenly;
 margin-left: 160px;
 margin-bottom: 50px;
 font-size: x-large;
-background-color: rgb(11, 206, 240);
 padding: 25px;
 }
 
@@ -235,14 +236,6 @@ filter: none;
   padding: 10px;
 }
 
-.sidebar {
-display: flex;
-flex-direction: column;
-list-style-type: none;
-border: 5px solid rgb(11, 206, 240);
-font-family: Georgia, 'Times New Roman', Times, serif;
-
-}
 
 .aboutmetext {
 font-size: 25px;
