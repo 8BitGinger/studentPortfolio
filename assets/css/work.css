@@ -1,4 +1,5 @@
 /* Universal selector */
+
 * {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
         box-sizing: border-box;
@@ -18,7 +19,6 @@ header {
     width: 100%;
     height: 80px;
     line-height: 50px;
-    padding-left: 21px;
     color: #ffffff;
     background-color: #404045;
 }
@@ -27,7 +27,8 @@ section {
     display:flex;
     flex-wrap: wrap;
     flex-direction: row;
-    padding-right: 250px;
+    padding-right: 200px;
+    padding-left: 40px;
 }
 
 aside {
@@ -43,6 +44,32 @@ background-color: rgba(100,147,167,1);
 font-style: italic;
 }
 
+/*this needs major work.  Right now it does not flow with media query*/
+h3 {
+    color: pink;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+}
+
+/* The user's cursor is positioned over the element */
+img:hover {
+    background-color: #772014;
+    background-size: 250px;
+  }
+  
+  /* The user is actively pressing down on the element */
+  img:active {
+    font-size: 180%;
+    box-shadow: 0 0 10px #000 inset;
+  }
+  
+  /* The element is currently in focus, either by tabbing to or clicking on it */
+  img:focus {
+    outline: none;
+    border-color: #8ac4ff;
+  }
 
 .header {
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -59,12 +86,11 @@ font-style: italic;
 
 .banner {
   justify-content: flex-end;
-  align-items: flex-end;
-  text-align: right;
 }
 
-div.banner h2 {
-  color:blue;
+.banner h2 {
+  position:sticky;
+  color:rgb(120, 187, 220);
   font-size:30px;
   font-family: cursive;
 }
@@ -74,36 +100,53 @@ div.banner h2 {
   max-height: 80px;
 }
 
+
 .gallery {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(12, 5vw);
+    grid-template-rows: repeat(15, 5vw);
     grid-gap: 15px;
 }
+
 
 .gallery__img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border: 3px solid rgb(184, 192, 205);
 }
 
 .gallery__item--1 {
     grid-column-start: 1;
     grid-column-end: 9;
     grid-row-start: 1;
-    grid-row-end: 8;
+    grid-row-end: 6;
 }
 
 .gallery__item--2 {
     grid-column-start: 1;
     grid-column-end: 5;
-    grid-row-start: 8;
-    grid-row-end: 12;
+    grid-row-start: 6;
+    grid-row-end: 8;
 }
 
 .gallery__item--3 {
     grid-column-start: 5;
     grid-column-end: 9;
+    grid-row-start: 6;
+    grid-row-end: 8;
+}
+
+.gallery__item--4 {
+    grid-column-start: 1;
+    grid-column-end: 5;
     grid-row-start: 8;
-    grid-row-end: 12;
+    grid-row-end: 10;
+}
+
+.gallery__item--5 {
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 8;
+    grid-row-end: 10;
 }
