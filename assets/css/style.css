@@ -1,7 +1,7 @@
 /* Universal selector */
 
 * {
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
       box-sizing: border-box;
       padding: 0;
       margin: 0;
@@ -9,8 +9,9 @@
 
 /* Element selectors */
 body {
+
   background-color: rgb(160, 187, 244);
-  background-image: linear-gradient(rgb(190, 221, 236), rgb(160, 187, 244));
+  background: repeating-radial-gradient(circle at 0 0, rgb(233, 246, 255), rgb(225, 241, 255) 50px);
 }
 
 header {
@@ -19,11 +20,11 @@ header {
   flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
+  padding-top: 10px;
   height: 80px;
   line-height: 50px;
   color: #ffffff;
   background-color: #404045;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 section {
@@ -47,17 +48,17 @@ text-indent: 5%;
 aside {
 float: left;
 text-align: right;
-font-family:Arial, Helvetica, sans-serif;
 font-size: 25px;
-color:white;
+color:rgb(6, 85, 141);
 height:1300px;
 width:160px;
 padding-right: 15px;
 font-style: italic;
-border-right: 6px solid rgb(7, 29, 91);
-height: 1300px;
-line-height: 9;
+border-right: 6px solid rgb(6, 85, 141);
+line-height: 6;
+margin-top: -20px;
 }
+
 
 footer {
 display: flex;
@@ -65,10 +66,23 @@ flex-direction: row;
 text-align: center;
 justify-content: space-evenly;
 margin-left: 160px;
-margin-bottom: 50px;
-font-size: x-large;
+margin-bottom: 25px;
+font-size: 50px;
 padding: 25px;
+color: #404045;
 }
+
+footer a {
+  color: rgb(6, 85, 141);
+  text-transform:uppercase;
+  text-decoration: none;
+  text-decoration: underline;
+  }
+  
+  footer a:hover {
+  color: rgb(11, 206, 240);
+  text-transform: lowercase;
+  }
 
 h3 {
   color: rgb(255, 255, 255);
@@ -77,9 +91,10 @@ h3 {
 }
 
 h1 {
-padding: 5px;
-font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-size: 80px;
 }
+
+
 
 nav ul {
 display: flex;
@@ -91,20 +106,20 @@ justify-content: space-between;
 nav li {
 margin-right: 10px;
 font-size: 130%;
-margin-top: 40px;
+margin-top: 25px;
 margin-bottom: 50px;
 }
 
 nav a {
 color: #ffffff;
 text-transform: lowercase;
-text-decoration: none;
+text-decoration: underline;
 }
 
 nav a:hover {
 color: rgb(11, 206, 240);
+text-transform: capitalize;
 }
-
 
 a img {
 width: 100%;
@@ -146,20 +161,21 @@ justify-content: flex-end;
 }
 
 .banner h2 {
-float:inline-end;
-  text-align: right;
-color:rgb(255, 255, 255);
+float:inline-start;
+text-align: right;
+color:rgb(254, 254, 254);
 font-size:20px;
-font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 font-style: italic;
-margin-top: -30px;
+margin-top: -50px;
+margin-right: 50px;
 margin-bottom: 30px;
-font-weight: 500;
+font-weight: 800;
+font-family: 'Courier New', Courier, monospace;
 }
 
 .bannerimage {
 width: 100%;
-max-height: 150px;
+max-height: 500px;
 }
 
 .gallery {
@@ -218,9 +234,9 @@ filter: none;
   grid-row-end: 10;
 }
 
-
 .floatbox {
   display:flex;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   background-color: rgb(11, 206, 240);
   width: fit-content;
   position: relative;
@@ -231,6 +247,7 @@ filter: none;
 
 .floatbox2 {
   display: flex;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   background-color: rgb(11, 206, 240);
   width: fit-content;
   position: absolute;
@@ -239,10 +256,13 @@ filter: none;
   font-size: large;
 }
 
+.sidebar {
+  font-size: 27px;
+}
 
 .aboutmetext {
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 font-size: 20px;
-font-family: cursive;
 font-weight: 600;
 color: #404045;
 } 
