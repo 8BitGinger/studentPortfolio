@@ -9,7 +9,8 @@
 
 /* Element selectors */
 body {
-  background-color: rgb(167, 219, 227);
+  background-color: rgb(160, 187, 244);
+  background-image: linear-gradient(rgb(190, 221, 236), rgb(160, 187, 244));
 }
 
 header {
@@ -113,7 +114,7 @@ position: relative;
 }
 
 a img:hover {
-  box-shadow: inset 0px 0px 8px rgb(0, 225, 255), 0 0 8px rgb(252, 231, 0);
+  box-shadow: inset 0px 0px 15px rgb(0, 55, 62), 0 0 25px rgb(255, 255, 255);
 }
 
 /* The user is actively pressing down on the element */
@@ -225,7 +226,7 @@ filter: none;
   position: relative;
   margin-top:-150px;
   padding: 10px;
-
+  font-size: large;
 }
 
 .floatbox2 {
@@ -235,6 +236,7 @@ filter: none;
   position: absolute;
   margin-top:-100px;
   padding: 10px;
+  font-size: large;
 }
 
 
