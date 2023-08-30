@@ -9,7 +9,7 @@
 
 /* Element selectors */
 body {
-
+  display:block;
   background-color: rgb(160, 187, 244);
   background: repeating-radial-gradient(circle at 0 0, rgb(233, 246, 255), rgb(225, 241, 255) 50px);
 }
@@ -18,13 +18,13 @@ header {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
   width: 100%;
   padding-top: 10px;
   height: 80px;
   line-height: 50px;
   color: #ffffff;
   background-color: #404045;
+  justify-content: space-between;
 }
 
 section {
@@ -100,7 +100,6 @@ nav ul {
 display: flex;
 flex-wrap: wrap;
 list-style: none;
-justify-content: space-between;
 }
 
 nav li {
@@ -114,6 +113,7 @@ nav a {
 color: #ffffff;
 text-transform: lowercase;
 text-decoration: underline;
+justify-content: flex-start;
 }
 
 nav a:hover {
@@ -239,8 +239,8 @@ filter: none;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   background-color: rgb(11, 206, 240);
   width: fit-content;
-  position: relative;
-  margin-top:-150px;
+  position: absolute;
+  margin-top:-100px;
   padding: 10px;
   font-size: large;
 }
@@ -267,24 +267,28 @@ font-weight: 600;
 color: #404045;
 } 
 
+
+
+
+
 @media screen and (max-width: 992px) {
-.card {
-  width: 50%;
+  .gallery {
+    width: 50%;
+    display: inline-block
+  }
 }
-display: inline-block
+
+
+@media screen and (max-width: 768px) {
+  .gallery {
+    width: 100%;
+    display: inline-block
+  }
 }
 
 @media screen and (max-width: 768px) {
-.card {
-  width: 50%;
-}
-display: inline-block
-}
-
-@media screen and (max-width: 576px) {
-.card {
-  width: 25%;
-}
-
-display: inline-block
+  .header {
+    width: 100%;
+    display: inline-block
+  }
 }

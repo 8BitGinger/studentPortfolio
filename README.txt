@@ -9,7 +9,13 @@ Badges
 none
 
 Visuals
-ADD Screenshot
+Screenshot:
+![image](https://github.com/8BitGinger/challengetwo/assets/141375216/7b95bbaf-dd44-4c6d-b029-65a36cf421d3)
+
+
+links
+Live URL:
+Repo URL: 
 
 Support
 Reach out to ryan.fann@gmail.com for questions or support issues
