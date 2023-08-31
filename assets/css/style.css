@@ -272,23 +272,62 @@ color: #404045;
 
 
 @media screen and (max-width: 992px) {
-  .gallery {
+  body {
+    width: 100%;
+    display: inline-block;
+  }
+
+  header {
+    width: 100%;
+    display: inline-block;
+  }
+
+  section {
+    width: 100%;
+    display: inline-block;
+  }
+
+  div: {
+    width: 100%;
+    display: inline-block;
+  }
+
+  footer: {
+    width: 100%;
+    display: inline-block;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  body {
     width: 50%;
-    display: inline-block
+    display: inline-block;
+  }
+
+  header {
+    width: 50%;
+    display: inline-block;
+  }
+
+  section {
+    width: 50%;
+    display: inline-block;
+  }
+
+  div: {
+    width: 50%;
+    display: inline-block;
+  }
+
+  footer: {
+    width: 50%;
+    display: inline-block;
   }
 }
 
-
 @media screen and (max-width: 768px) {
-  .gallery {
-    width: 100%;
-    display: inline-block
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .header {
-    width: 100%;
-    display: inline-block
+  body {
+    width: 25%
   }
 }
