@@ -61,10 +61,10 @@ top:0;
 left:0;
 overflow-x:hidden;
 font-style: italic;
-border-right: 6px solid rgb(6, 85, 141);
 display: flex;
 flex-wrap: wrap;
 flex-direction: row;
+background-color: #404045;
 }
 
 
@@ -118,7 +118,9 @@ font-size: 80px;
 margin-top: 10px;
 }
 
-
+h1:hover {
+color:rgb(23, 85, 231);
+}
 
 nav ul {
 display: flex;
@@ -128,7 +130,7 @@ list-style: none;
 
 nav li {
 margin-right: 10px;
-font-size: 130%;
+font-size: x-large;
 margin-top: 25px;
 margin-bottom: 50px;
 }
@@ -153,7 +155,7 @@ position: relative;
 }
 
 a img:hover {
-  box-shadow: inset 0px 0px 15px rgb(0, 55, 62), 0 0 25px rgb(255, 255, 255);
+  box-shadow: inset 0px 0px 15px rgb(0, 55, 62), 0 0 25px rgb(5, 128, 229);
 }
 
 /* The user is actively pressing down on the element */
@@ -186,7 +188,7 @@ padding-bottom: 20%;
 .banner {
 display: flex;
 flex-wrap: wrap;
-
+background-color: #404045;
 
 width: 100%;
 height: 140px;;
@@ -199,14 +201,18 @@ height: 140px;;
 .banner img {
   height: 180px;
   width: 100%;
+  border-radius: 25px;
 }
 
 .headshot {
-  max-height: 140px;
-  max-width: 130px;
-  margin-left: 10px;
-  border-radius: 100%;
+border-radius: 100%;
+max-block-size: 170px;
+margin-top: 50px;
+margin-left: 5px;
+margin-right: 5px;
+border: 2px double rgb(24, 128, 146);
 }
+
 
 .gallery {
   display: grid;
@@ -288,16 +294,20 @@ filter: none;
 }
 
 .sidebar {
-  padding: 6px 8px 6px 16px;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 30px;
   color: #818181;
 }
 
 .sidebar a {
-  color: rgb(11, 206, 240);
+  color: white;
   text-decoration: none;
   text-align: center;
+}
+
+.sidebar a:hover {
+  color: rgb(11, 206, 240);
+  text-decoration: overline;
 }
 
 .aboutmetext {
@@ -309,8 +319,53 @@ color: #404045;
 
 
 
+@media screen and (max-width: 992px) {
+  .card {
+    width: 50%;
+  }
+  display: inline-block
 
+  .header {
+    height: 150%
+  }
+  }
+  
+  @media screen and (max-width: 768px) {
+  .card {
+    width: 50%;
+    min-width: 50%
+    
+  }
+  .floatbox1{
+    font-size: smaller;
+  }
 
+  .floatbox2 {
+    font-size: smaller;
+  }
+
+  .header {
+    height: 150%
+  }
+  h1 {
+    font-size: 60px;
+  }
+
+  h2 {
+    font-size: 15px;
+  }
+
+  footer {
+    font-size: large;
+  }
+
+  }
+
+  
+  @media screen and (max-width: 576px) {
+  .card {
+    width: min-content;
+  }
 
 
 
