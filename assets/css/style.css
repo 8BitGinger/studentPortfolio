@@ -109,7 +109,7 @@ h2 {
   right:0;
   text-align: right;
   font-style: italic;
-  2font-size:30px;
+  font-size:30px;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -186,20 +186,20 @@ padding-bottom: 20%;
 .banner {
 display: flex;
 flex-wrap: wrap;
-flex-direction: column;
-background-image: url(/assets/images/webbannerv1.png);
-background-position: center;
-background-size: contain;
+
+
 width: 100%;
 height: 140px;;
 }
 
 .banner h2 {
-  flex-wrap: wrap;
-  display: flex;
+  margin-top: -100px;
 }
 
-
+.banner img {
+  height: 180px;
+  width: 100%;
+}
 
 .headshot {
   max-height: 140px;
