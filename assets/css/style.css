@@ -73,7 +73,7 @@ font-style: italic;
 display: flex;
 flex-wrap: wrap;
 flex-direction: row;
-background-image: url(/assets/images/blueBackLines.png);
+background-image: url(assets/images/blueBackLines.png);
 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
@@ -85,7 +85,7 @@ flex-direction: row;
 margin: auto;
 
 margin-bottom: 25px;
-font-size: 50px;
+font-size: 20px;
 padding: 25px;
 color: #404045;
 justify-content: center;
@@ -97,15 +97,12 @@ footer a {
   color: rgb(6, 85, 141);
   text-transform:uppercase;
   text-decoration: none;
-  text-decoration: underline;
+  
   justify-content: center;
   margin: 10px;
   }
   
-  footer a:hover {
-  color: rgb(11, 206, 240);
-  text-transform: lowercase;
-  }
+
 
 h3 {
   color: rgb(255, 255, 255);
@@ -333,7 +330,7 @@ color: #0a0a7c;
 } 
 
 .contactpic{
-  max-block-size: 100px;
+  max-width: 100px;
   border: none;
   border-radius: 100px;
 }

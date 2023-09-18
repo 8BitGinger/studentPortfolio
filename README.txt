@@ -14,8 +14,8 @@ Screenshot:
 
 
 links
-Live URL:
-Repo URL: 
+Live URL: https://8bitginger.github.io/studentPortfolio/
+Repo URL: https://github.com/8BitGinger/studentPortfolio
 
 Support
 Reach out to ryan.fann@gmail.com for questions or support issues
