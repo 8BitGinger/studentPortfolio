@@ -25,6 +25,7 @@ header {
   line-height: 50px;
   color: #ffffff;
   background-color: #404045;
+
   justify-content: space-between;
 }
 
@@ -49,8 +50,16 @@ padding-right: 100px;
 padding-left: 35px;
 padding-bottom: 20px;
 text-indent: 5%;
+margin: auto;
 margin-top: 50px;
+font-family: monospace;
+justify-content: center;
 }
+
+a {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
 
 aside {
 height: 100%;
@@ -64,7 +73,8 @@ font-style: italic;
 display: flex;
 flex-wrap: wrap;
 flex-direction: row;
-background-color: #404045;
+background-image: url(/assets/images/blueBackLines.png);
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 
@@ -72,12 +82,13 @@ footer {
 display: flex;
 flex-wrap: wrap;
 flex-direction: row;
+margin: auto;
+
 margin-bottom: 25px;
 font-size: 50px;
 padding: 25px;
 color: #404045;
 justify-content: center;
-margin: auto;
 }
 
 footer a {
@@ -118,9 +129,7 @@ font-size: 80px;
 margin-top: 10px;
 }
 
-h1:hover {
-color:rgb(23, 85, 231);
-}
+
 
 nav ul {
 display: flex;
@@ -140,6 +149,7 @@ color: #ffffff;
 text-transform: lowercase;
 text-decoration: underline;
 justify-content: flex-start;
+font-family: fantasy;
 }
 
 nav a:hover {
@@ -149,7 +159,7 @@ text-transform: capitalize;
 
 a img {
 width: 100%;
-outline:15px solid rgb(11, 206, 240);
+outline:3px solid rgb(11, 206, 240);
 outline-offset:-15px;
 position: relative;
 }
@@ -189,19 +199,21 @@ padding-bottom: 20%;
 display: flex;
 flex-wrap: wrap;
 background-color: #404045;
-
-width: 100%;
+margin-left: -1px;
+width: 101%;
 height: 140px;;
 }
 
 .banner h2 {
   margin-top: -100px;
+  padding-right: 15px;
 }
 
 .banner img {
   height: 150px;
   width: 100%;
-  border-radius: 15px;
+  border-bottom: 3px double grey;
+
 }
 
 .headshot {
@@ -231,7 +243,7 @@ border: 2px double rgb(24, 128, 146);
   object-fit: cover;
   filter:blur(2px) grayscale(50%);
   align-content: center;
-  
+  border-radius: 7px;
 }
 
 .gallery__img:hover {
@@ -309,18 +321,26 @@ scale: 1.1;
 }
 
 .sidebar a:hover {
-  color: rgb(11, 206, 240);
+  color:rgb(6, 85, 141);
+
   text-decoration: overline;
 }
 
 .aboutmetext {
-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 font-size: 25px;
 font-weight: 600;
-color: #404045;
+color: #0a0a7c;
 } 
 
+.contactpic{
+  max-block-size: 100px;
+  border: none;
+  border-radius: 100px;
+}
 
+.contactpic:hover {
+  scale: 1.1;
+}
 
 @media screen and (max-width: 992px) {
   .card {
@@ -341,10 +361,16 @@ color: #404045;
   }
   .floatbox1{
     font-size: smaller;
+    width: 18%;
   }
 
   .floatbox2 {
+    width: 18%;
     font-size: smaller;
+  }
+
+  .contactpic{
+    max-block-size: 50px;
   }
 
   .aboutmetext {
