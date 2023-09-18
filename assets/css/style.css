@@ -13,20 +13,23 @@ body {
   flex-wrap: wrap;
   margin-left: 150px;
   background-color: rgb(160, 187, 244);
-  background: repeating-radial-gradient(circle at 0 0, rgb(233, 246, 255), rgb(225, 241, 255) 50px);
-}
+background-image: url(../images/blueBackSoft.png);}
 
 header {
+  
+  position: fixed;
+  z-index: 1;
+  top: 0;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  justify-content: space-around;
+  left: 0;
   width: 100%;
   height: 80px;
   line-height: 50px;
   color: #ffffff;
   background-color: #404045;
-
-  justify-content: space-between;
+  
 }
 
 div{
@@ -43,23 +46,28 @@ section {
 }
 
 p {
+  width: 80%;
 display:flex;
 flex-wrap: wrap;
 flex-direction: row;
-padding-right: 100px;
 padding-left: 35px;
 padding-bottom: 20px;
 text-indent: 5%;
 margin: auto;
-margin-top: 50px;
+margin-top: 30px;
 font-family: monospace;
 justify-content: center;
+margin-bottom: 50px;
 }
 
 a {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
+nav {
+  
+  
+}
 
 aside {
 height: 100%;
@@ -69,37 +77,45 @@ z-index:1;
 top:0;
 left:0;
 overflow-x:hidden;
-font-style: italic;
 display: flex;
 flex-wrap: wrap;
 flex-direction: row;
-background-image: url(../images/blueBackLines.png);
+background-color: #404045;
+text-align: center;
+margin: auto;
 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
+.wrap {
+  margin-top: 80px;
+}
 
 footer {
 display: flex;
 flex-wrap: wrap;
 flex-direction: row;
-margin: auto;
 
-margin-bottom: 25px;
+bottom: 0;
+
+width: 100%;
+margin: auto;
+height: fit-content;
 font-size: 20px;
 padding: 25px;
 color: #404045;
+
 justify-content: center;
 }
 
+
 footer a {
-  display: flex;
-  flex-wrap: wrap;
+ display: block;  
+
   color: rgb(6, 85, 141);
   text-transform:uppercase;
   text-decoration: none;
   
   justify-content: center;
-  margin: 10px;
   }
   
 
@@ -129,23 +145,24 @@ margin-top: 10px;
 
 
 nav ul {
-display: flex;
-flex-wrap: wrap;
+display: inline;
 list-style: none;
+margin: auto;
+
 }
 
 nav li {
+display: inline;
 margin-right: 10px;
 font-size: x-large;
-margin-top: 25px;
-margin-bottom: 50px;
+
+
 }
 
 nav a {
 color: #ffffff;
 text-transform: lowercase;
 text-decoration: underline;
-justify-content: flex-start;
 font-family: fantasy;
 }
 
@@ -154,15 +171,15 @@ color: rgb(11, 206, 240);
 text-transform: capitalize;
 }
 
-a img {
+figure a img {
 width: 100%;
-outline:3px solid rgb(11, 206, 240);
+outline:8px solid rgb(11, 206, 240);
 outline-offset:-15px;
 position: relative;
 }
 
 a img:hover {
-  box-shadow: inset 0px 0px 15px rgb(0, 55, 62), 0 0 25px rgb(5, 128, 229);
+  box-shadow: inset 0px 0px 15px rgb(251, 251, 251), 0 0 25px rgb(250, 250, 250);
 }
 
 /* The user is actively pressing down on the element */
@@ -177,11 +194,7 @@ a img:focus {
   border-color: #e60a0a;          
 }
 
-.header {
-  display: flex;
-  flex-wrap: wrap;
-  max-block-size: 200px;
-}
+
 
 
 
@@ -228,7 +241,7 @@ border: 2px double rgb(24, 128, 146);
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(10, 5vw);
   grid-gap: 25px;
-  width: 90%;
+  width: 80%;
   justify-content: center;
   margin: auto;
 }
@@ -245,7 +258,7 @@ border: 2px double rgb(24, 128, 146);
 
 .gallery__img:hover {
 filter: none;
-scale: 1.1;
+scale: 1.03;
 }
 
 .gallery__item--1 {
@@ -309,6 +322,7 @@ scale: 1.1;
   text-decoration: none;
   font-size: 30px;
   color: #818181;
+  margin-top: 20px;
 }
 
 .sidebar a {
@@ -318,7 +332,7 @@ scale: 1.1;
 }
 
 .sidebar a:hover {
-  color:rgb(6, 85, 141);
+  color:rgb(11, 206, 240);
 
   text-decoration: overline;
 }
@@ -330,15 +344,17 @@ color: #0a0a7c;
 } 
 
 .contactpic{
-  max-width: 50px;
+  max-width: 25%;
   max-height: 100px;
   border: none;
-  border-radius: 100px;
+  border-radius: 100%;
 }
 
 .contactpic:hover {
   scale: 1.1;
 }
+
+
 
 @media screen and (max-width: 992px) {
   .card {
@@ -362,6 +378,10 @@ color: #0a0a7c;
     width: 18%;
   }
 
+  p {
+    font-size: medium;
+  };
+
   .floatbox2 {
     width: 18%;
     font-size: smaller;
@@ -375,15 +395,38 @@ color: #0a0a7c;
     font-size: 18px;
   }
 
-  .header {
-    height: 150%
+  .banner {
+    margin-top: 50px;
   }
+
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  footer a {
+    margin: 10px;
+    text-align: center;
+  }
+
+ .header {
+  flex-direction: column;
+  height: 160px;
+  margin-left: 150px;
+
+ }
   h1 {
-    font-size: 60px;
+    font-size: 40px;
   }
 
   h2 {
     font-size: 18px;
+  }
+
+ div h3 {
+    font-size: x-small;
+    font-family: monospace;
   }
 
   footer {
@@ -391,8 +434,12 @@ color: #0a0a7c;
   }
 
  nav a {
-    font-size: large;
+    font-size: small;
   }
+
+nav ul li {
+  margin: auto;
+}
 
   }
 
