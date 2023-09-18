@@ -199,9 +199,9 @@ height: 140px;;
 }
 
 .banner img {
-  height: 180px;
+  height: 150px;
   width: 100%;
-  border-radius: 25px;
+  border-radius: 15px;
 }
 
 .headshot {
@@ -219,7 +219,9 @@ border: 2px double rgb(24, 128, 146);
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(10, 5vw);
   grid-gap: 25px;
-  width: 100%;
+  width: 80%;
+  justify-content: center;
+  margin: auto;
 }
 
 
@@ -312,7 +314,7 @@ filter: none;
 
 .aboutmetext {
 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-font-size: 20px;
+font-size: 25px;
 font-weight: 600;
 color: #404045;
 } 
@@ -344,6 +346,10 @@ color: #404045;
     font-size: smaller;
   }
 
+  .aboutmetext {
+    font-size: 18px;
+  }
+
   .header {
     height: 150%
   }
@@ -352,10 +358,14 @@ color: #404045;
   }
 
   h2 {
-    font-size: 15px;
+    font-size: 18px;
   }
 
   footer {
+    font-size: large;
+  }
+
+ nav a {
     font-size: large;
   }
 
