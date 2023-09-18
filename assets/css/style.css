@@ -219,7 +219,7 @@ border: 2px double rgb(24, 128, 146);
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(10, 5vw);
   grid-gap: 25px;
-  width: 80%;
+  width: 90%;
   justify-content: center;
   margin: auto;
 }
@@ -236,6 +236,7 @@ border: 2px double rgb(24, 128, 146);
 
 .gallery__img:hover {
 filter: none;
+scale: 1.1;
 }
 
 .gallery__item--1 {
