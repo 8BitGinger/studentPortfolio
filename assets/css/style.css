@@ -73,7 +73,7 @@ font-style: italic;
 display: flex;
 flex-wrap: wrap;
 flex-direction: row;
-background-image: url(assets/images/blueBackLines.png);
+background-image: url(../images/blueBackLines.png);
 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
@@ -330,7 +330,8 @@ color: #0a0a7c;
 } 
 
 .contactpic{
-  max-width: 100px;
+  max-width: 50px;
+  max-height: 100px;
   border: none;
   border-radius: 100px;
 }
