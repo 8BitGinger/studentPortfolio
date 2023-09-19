@@ -13,7 +13,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   margin-left: 150px;
-  background-color: rgb(205, 236, 255);
+  background: linear-gradient(60deg, #7bdef4 0%, #ffffff 100%);
 
 }
 
@@ -49,7 +49,7 @@ section {
 }
 
 p {
-  width: 80%;
+
 display:flex;
 flex-wrap: wrap;
 flex-direction: row;
@@ -58,7 +58,7 @@ padding-bottom: 20px;
 text-indent: 5%;
 margin: auto;
 margin-top: 30px;
-font-family: monospace;
+font-family:Arial, Helvetica, sans-serif;
 justify-content: center;
 margin-bottom: 50px;
 }
@@ -350,8 +350,25 @@ scale: 1.03;
 .aboutmetext {
 font-size: 25px;
 font-weight: 600;
-color: #0a0a7c;
+color: #223757;
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
 } 
+
+.aboutmetext p {
+  text-align: center;
+  padding: 20px;
+  background-color: aliceblue;
+  width: 40%;
+  border-radius: 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.aboutmetext p:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px , rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+
+}
 
 .contactpic{
   max-width: 25%;
@@ -401,9 +418,13 @@ color: #0a0a7c;
     max-block-size: 50px;
   }
 
-  .aboutmetext {
+  .aboutmetext p {
     font-size: 18px;
+    flex-direction: column;
+    width: 80%;
   }
+
+
 
   .banner {
     margin-top: 50px;
