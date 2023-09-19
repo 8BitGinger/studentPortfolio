@@ -40,6 +40,11 @@ div{
   flex-wrap: wrap;
 }
 
+div .aboutmetext {
+  justify-content: center;
+  
+}
+
 section {
   display:flex;
   flex-wrap: wrap;
@@ -58,6 +63,8 @@ padding-bottom: 20px;
 text-indent: 5%;
 margin: auto;
 margin-top: 30px;
+margin-left: 10px;
+margin-right: 10px;
 font-family:Arial, Helvetica, sans-serif;
 justify-content: center;
 margin-bottom: 50px;
@@ -375,7 +382,10 @@ flex-direction: row;
   max-height: 100px;
   border: none;
   border-radius: 100%;
+  margin: 3px;
 }
+
+
 
 .contactpic:hover {
   scale: 1.1;
