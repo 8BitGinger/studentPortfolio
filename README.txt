@@ -10,8 +10,7 @@ Will need to do some major studying on Media queries.  I have a very little gras
 
 Visuals
 Screenshot:
-![image](https://github.com/8BitGinger/challengetwo/assets/141375216/7b95bbaf-dd44-4c6d-b029-65a36cf421d3)
-
+assets/images/live screenshot challenge 2.jpg
 
 links
 Live URL: https://8bitginger.github.io/studentPortfolio/
