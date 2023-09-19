@@ -1,5 +1,6 @@
 /* Universal selector */
 
+
 * {
   font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
       box-sizing: border-box;
@@ -12,8 +13,9 @@ body {
   display: flex;
   flex-wrap: wrap;
   margin-left: 150px;
-  background-color: rgb(160, 187, 244);
-background-image: url(../images/blueBackSoft.png);}
+  background-color: rgb(205, 236, 255);
+
+}
 
 header {
   
@@ -28,7 +30,8 @@ header {
   height: 80px;
   line-height: 50px;
   color: #ffffff;
-  background-color: #404045;
+  background-image: url(../images/blueBackLines.png);
+background-size: auto;
   
 }
 
@@ -80,7 +83,8 @@ overflow-x:hidden;
 display: flex;
 flex-wrap: wrap;
 flex-direction: row;
-background-color: #404045;
+background-image: url(../images/blueBackLines.png);
+background-size: auto;
 text-align: center;
 margin: auto;
 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -212,6 +216,8 @@ background-color: #404045;
 margin-left: -1px;
 width: 101%;
 height: 140px;;
+background-image: url(../images/blueBackLines.png);
+background-size: auto;
 }
 
 .banner h2 {
@@ -223,18 +229,22 @@ height: 140px;;
   height: 150px;
   width: 100%;
   border-bottom: 3px double grey;
+  border-radius: 25px
 
 }
 
 .headshot {
 border-radius: 100%;
 max-block-size: 170px;
-margin-top: 50px;
+margin-top: 10px;
 margin-left: 5px;
 margin-right: 5px;
 border: 2px double rgb(24, 128, 146);
 }
 
+.headshot:hover {
+  scale:1.1;
+}
 
 .gallery {
   display: grid;
