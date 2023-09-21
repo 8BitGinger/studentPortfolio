@@ -107,9 +107,6 @@ aside a {
 }
 
 footer {
-display: flex;
-flex-wrap: wrap;
-flex-direction: row;
 
 bottom: 0;
 
@@ -121,6 +118,7 @@ padding: 25px;
 color: #404045;
 font-family: ;
 justify-content: center;
+margin-bottom: 50px;
 }
 
 
@@ -414,7 +412,7 @@ text-align: center;
   text-align: center;
   padding: 20px;
   
-  width: 100%;
+  width: 90%;
   border-radius: 5px;
 }
 
@@ -422,7 +420,7 @@ text-align: center;
 
 .contactpic{
   max-width: 25%;
-  max-height: 100px;
+  max-height: 200px;
   border: none;
   border-radius: 100%;
   margin: 3px;
@@ -434,6 +432,11 @@ text-align: center;
   scale: 1.1;
 }
 
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
 
 
 @media screen and (max-width: 992px) {
