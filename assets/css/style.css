@@ -161,13 +161,13 @@ h3 {
   margin: auto;
   font-size: 50px;
   color: #2361c6;
-text-decoration: none;
-margin-bottom: 25px;
-position: fixed;
-bottom: 0;
-right: 0;
-z-index: 1;
-opacity: 50%;
+  text-decoration: none;
+  margin-bottom: 25px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  opacity: 50%;
 }
 
 h2 {
