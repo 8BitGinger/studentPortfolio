@@ -68,7 +68,7 @@ font-family: 'Mooli';
 
 .highlight {
   color: blue;
-
+  text-align: center;
   width: 100%;
   font-size: xx-large;
   margin-bottom: 10px;
@@ -156,13 +156,13 @@ h3 {
 .center {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  text-align: center;
+
   margin: auto;
   font-size: 50px;
   color: #2361c6;
   text-decoration: none;
   margin-bottom: 25px;
+  margin-right: 5px;
   position: fixed;
   bottom: 0;
   right: 0;
@@ -170,9 +170,15 @@ h3 {
   opacity: 50%;
 }
 
+.center h4:hover {
+  color: #e60a0a;
+  scale: 1.02;
+  transition: ease-in-out 0.2s;
+
+}
+
 h2 {
   color: #ffffff;
-  right:0;
   text-align: right;
   
   font-size:32px;
@@ -273,7 +279,8 @@ background-size: auto;
 
 .banner h2 {
   margin-top: -100px;
-  padding-right: 15px;
+  justify-content: right;
+  
 }
 
 .banner img {
@@ -439,10 +446,10 @@ text-align: center;
 } 
 
 .aboutmetext p {
-  text-align: center;
+  text-align: left;
   padding: 20px;
   
-  width: 90%;
+  width: 70%;
   border-radius: 5px;
 }
 
@@ -453,7 +460,9 @@ text-align: center;
 .footer a:hover {
   text-transform: lowercase;
   font-family: 'dancing script';
-  font-size: 40px;
+  font-size: 30px;
+  transition: ease-in 0.4s;
+
 }
 
 .contactpic{
@@ -471,6 +480,9 @@ text-align: center;
 
 .contactpic:hover {
   scale: 1.1;
+  
+  transition: ease-in-out 0.2s;
+
 }
 
 .footer {
@@ -562,7 +574,9 @@ text-align: center;
     font-size: 18px;
   }
 
-
+  .center {
+    font-size: 25px;
+  }
 
   footer {
     font-size: large;
