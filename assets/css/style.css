@@ -255,13 +255,16 @@ background-position: center;
 border-bottom: 3px double grey;
 border-top-left-radius: 15px;
 border-bottom-left-radius: 15px;
+justify-content: right;
+align-content: center;
+text-align: right;
+padding: 20px;
 }
 
 
 
 .banner-text h2 {
-  position: absolute;
-  bottom: 0;
+  margin: 20px;
 }
 
 
