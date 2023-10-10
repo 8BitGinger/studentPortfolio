@@ -69,7 +69,7 @@ font-family: 'Rajdhani';
 
 a {
   font-family: 'caveat';
-  font-size: xx-large;
+  font-size: 50px;
 }
 
 nav {
@@ -98,7 +98,8 @@ background-image: url(../images/blueBackLines.png);
 background-size: auto;
 text-align: center;
 margin: auto;
-font-family: 'caveat';}
+font-family: 'caveat';
+}
 
 aside a {
   margin-left: 8px;
@@ -139,9 +140,6 @@ h3 {
   font-size: medium;
 }
 
-.h4 {
-  font-family: pixelify sans;
-}
 
 .center {
   display: flex;
@@ -271,6 +269,7 @@ padding: 20px;
 
 .banner-text {
   margin: 20px;
+  background-color: black;
 }
 
 
@@ -396,6 +395,7 @@ filter: none;
 
 .sidebar {
   text-decoration: none;
+  justify-content: center;
   font-size: 30px;
   color: #818181;
   margin-top: 20px;
@@ -405,6 +405,8 @@ filter: none;
   color: white;
   text-decoration: none;
   text-align: center;
+  font-size: 30px;
+
 }
 
 .sidebar a:hover {
