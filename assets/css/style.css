@@ -276,7 +276,7 @@ padding: 20px;
 
 .headshot {
 border-radius: 100%;
-max-block-size: 170px;
+max-block-size: 140px;
 margin-top: 10px;
 margin-left: 5px;
 margin-right: 5px;
@@ -473,6 +473,11 @@ margin: 25px;
   transition: ease-in-out 0.2s;
 }
 
+
+.navlinks a {
+  margin: 5px;
+}
+
 .footer {
   display: flex;
   flex-wrap: wrap;
@@ -485,6 +490,12 @@ margin: 25px;
 .text-adj {
   font-family: 'pixelify sans';
   color: dodgerblue;
+}
+
+.orange {
+  font-size: 35px;
+  color: rgb(220, 149, 17);
+  background-color: green;
 }
 
 @media screen and (max-width: 992px) {
@@ -576,11 +587,12 @@ margin: 25px;
   }
 
  nav a {
-    font-size: small;
+    font-size: medium;
   }
 
 nav ul li {
   margin: auto;
+  font-size: large;
 }
 
   }
