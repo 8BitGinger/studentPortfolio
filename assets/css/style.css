@@ -6,12 +6,14 @@
       margin: 0;
 }
 
+
+
 body {
   display: flex;
   flex-wrap: wrap;
   margin-left: 150px;
-  background-image: url(../images/blueBackSoft.png);
-  background-size: cover;
+  background-image: url(../images/brickback.jpg);
+  background-size: contain;
   background-position: center;
 }
 
@@ -53,20 +55,21 @@ padding-bottom: 20px;
 text-indent: 5%;
 margin: auto;
 margin-top: 30px;
-font-family: 'Mooli';
+font-family: 'Rajdhani';
 }
 
 .highlight {
-  color: blue;
+  color: dodgerblue;
   text-align: center;
   width: 100%;
   font-size: xx-large;
   margin-bottom: 10px;
-  font-family: 'oswald';
+  font-family: 'Dela Gothic One';
 }
 
 a {
-  font-family: 'oswald';
+  font-family: 'caveat';
+  font-size: xx-large;
 }
 
 nav {
@@ -76,7 +79,9 @@ nav {
   width: 50%; 
   top: 0; 
   margin: auto;
+  font-size: larger;
 }
+
 
 aside {
 height: 100%;
@@ -93,7 +98,7 @@ background-image: url(../images/blueBackLines.png);
 background-size: auto;
 text-align: center;
 margin: auto;
-font-family: 'oswald';}
+font-family: 'caveat';}
 
 aside a {
   margin-left: 8px;
@@ -135,7 +140,7 @@ h3 {
 }
 
 .h4 {
-
+  font-family: pixelify sans;
 }
 
 .center {
@@ -170,7 +175,7 @@ h1 {
   width: 50%;
 font-size: 80px;
 margin-top: 12px;
-font-family: 'oswald';
+font-family: 'pixelify sans';
 justify-content: left;
 }
 
@@ -190,7 +195,7 @@ bottom:0;
 nav li {
 display: inline;
 margin-right: 10px;
-font-family: 'oswald';
+font-family: 'caveat';
 font-size: x-large;
 }
 
@@ -198,7 +203,7 @@ nav a {
 color: #ffffff;
 text-transform: lowercase;
 text-decoration: underline;
-font-family: 'oswald';
+
 }
 
 nav a:hover {
@@ -249,8 +254,8 @@ display: flex;
 flex-wrap: wrap;
 width: 100%;
 height: 140px;
-background-image: url(../images/webbannerv1.png);
-background-size: contain;
+background-image: url(../images/downloadv2.png);
+background-size: cover;
 background-position: center;
 border-bottom: 3px double grey;
 border-top-left-radius: 15px;
@@ -312,7 +317,7 @@ filter: none;
 }
 
 .name {
-  font-family: 'oswald';
+  font-family: 'pixelify sans';
 }
 
 .gallery__item--1 {
@@ -407,7 +412,7 @@ filter: none;
 }
 
 .aboutmetext {
-font-size: 20px;
+font-size: 30px;
 font-weight: 600;
 color: #0b3f8d;
 display: flex;
@@ -426,8 +431,7 @@ margin: 25px;
   width: 82%;
   border-radius: 15px;
   border: 8px solid rgb(19, 220, 247);
-  background-image: linear-gradient(to right, rgb(162, 215, 243), rgb(255, 255, 255));
-
+  background: linear-gradient(90deg, #e3ffe7 0%, #7fd8fe 100%);
 }
 
 .aboutmetext p:hover {
@@ -472,6 +476,10 @@ margin: 25px;
   flex-direction: row;
 }
 
+.text-adj {
+  font-family: 'pixelify sans';
+  color: dodgerblue;
+}
 
 @media screen and (max-width: 992px) {
   .card {
