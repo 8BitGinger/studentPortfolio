@@ -251,6 +251,7 @@ padding-bottom: 20%;
 
 .banner {
 display: flex;
+opacity: (80%);
 flex-wrap: wrap;
 width: 100%;
 height: 140px;
@@ -268,7 +269,7 @@ padding: 20px;
 
 
 
-.banner-text h2 {
+.banner-text {
   margin: 20px;
 }
 
@@ -474,6 +475,9 @@ margin: 25px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  background: linear-gradient(120deg, #47b5f4 0%, #a2daf2 100%);
+  margin: 0;
+  bottom: 0;
 }
 
 .text-adj {
