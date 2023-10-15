@@ -4,25 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Caveat&family=Dancing+Script&family=Dela+Gothic+One&family=Pixelify+Sans:wght@600&family=Rajdhani&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Dancing+Script&family=Dela+Gothic+One&family=Pixelify+Sans:wght@600&family=Rajdhani&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
 
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
-    <title>Student Portfolio</title>
+    <title>Student Portfolio - Ryan Fann</title>
 </head>
 <body>
     <header class="header">
-        <h1>  Ryan J. <span class="name" style="color: rgb(19, 82, 134)"> Fann </span> <span class="orange">(8BitGinger)</span> </h1>
-        <nav class="navbar">
-          <ul class="navlinks">
-            <li><a href="#aboutme">About Me</a></li>
-            <li><a href="#work">Work</a></li>
-            <li><a href="#contactme">Contact Me</a></li>
-            <li><a href="https://www.linkedin.com/in/ryan-fann-16688765/">Resume</a></li>
-          </ul>
-        </nav> 
+        <h1 class="title">  Ryan J. <span class="name" style="color: rgb(19, 82, 134)"> Fann </span>  </h1>
+
     </header>
   <div class="wrap">
     <div class="banner">
@@ -31,7 +24,7 @@
     
     <aside>
         <div class="sidebar">
-          <img class="headshot" src="./assets/images/pxArt.png">
+          <img class="headshot" src="./assets/images/headshot-80sback.png">
           <a href="#aboutme">About Me</a>
           <br>
           <a href="#work">Work</a>
@@ -41,15 +34,17 @@
     </aside>
 
     <div id="aboutme"  class="aboutmetext" >
-      <p> <span class="highlight">Hi, I’m Ryan!</span>I am Full-Stack Web Development Student through UTSA.  <br><br>In a nutshell, I am learning to create webesites that help orginzations address business challenges and meet their needs.  I will be able to manage everything from website navigation to thier UI/UX.  I will have expertise in both front end and back end development.    <br><br>My main languages are Javascript, HTML/CSS.  I'm a lifelong learner and currently excited about the Bootcamp I am attending.  <br><br>I love to spend time with my amazing Girlfriend and loyal Dog, Listen to New Music, Play Xbox, and Code!</bnr></p> 
+      <p> <span class="highlight">Hi, I’m Ryan!</span>I am Full-Stack Web Development Student through UTSA.  <br><br>In a nutshell, I am learning to create webesites that help orginzations address business challenges and meet their needs.  I will be able to manage everything from website navigation, to Third-Party APIs to thier UI/UX.  I will have expertise in both front end and back end development.    <br><br>My main languages are HTML, CSS, and JavaScript, although I'm versed in jQuery and other popular CDNs.  I'm a lifelong learner and currently excited about the Bootcamp I am attending.  <br><br>I love to spend time with my amazing Girlfriend Adrian and loyal Dog Jax, Listen to Apple Music, Playing Xbox, and Coding!</bnr></p> 
     </div>
 
+
+
     <section class ="gallery" id="work">
-      <div class="card" > </div>
+      <div class="card" >  </div>
           <figure class="gallery__item gallery__item--1">
             <a href="https://jameslwilson364.github.io/weeklyMoodal/">
-              <img src="assets/images/moodal-screenshot.png" class="gallery__img" alt="JS Quiz Screenshot"> </a>
-            <h3 class="floatbox"> weeklŸ Moodal <br> Project 1</h3>
+              <img src="assets/images/modal-screenshot.png" class="gallery__img main-image" alt="JS Quiz Screenshot"> </a>
+            <h3 class="floatbox"> <span class="lowercase">weeklŸ</span> Moodal <br> Project 1</h3>
           </figure>
          
           <figure class="gallery__item gallery__item--2">
@@ -88,24 +83,38 @@
               <img src="assets/images/codescreenshot.jpg" class="gallery__img" alt="Portfolio Code Screenshot"> </a>
             <h3 class="floatbox2"> Student Portfolio <br> Challenge Week 2</h3>     
           </figure>
+
+          <figure class="gallery__item gallery__item--8">
+            <a href="#">
+              <img src="assets/images/—Pngtree—website under construction monitor computer_7649846.png" class="gallery__img" alt="Portfolio Code Screenshot"> </a>
+            <h3 class="floatbox2"> Future Project <br> Coming Soon</h3> 
+          </figure>
+            
+
+          <figure class="gallery__item gallery__item--9">
+            <a href="#">
+              <img src="assets/images/—Pngtree—website under construction monitor computer_7649846.png" class="gallery__img" alt="Portfolio Code Screenshot"> </a>
+            <h3 class="floatbox2"> Future Project <br> Coming Soon</h3> 
+          </figure>
+
         </div>
     </section>
     
     <a class="center" href="https://github.com/8BitGinger/studentPortfolio/">
-      <h4  class="text-adj"><i class="fa-solid fa-code"></i> View Repo!</h4>
+      <h4  class="text-adj"><i class="fa-solid fa-code"></i> </h4>
     </a>
 
     <footer id="contactme" class="footer">
-      <a  href="tel:210-707-4283">Phone
-        <img class="contactpic" src="assets/images/phoneLogo.png"></a>
+      <a  href="tel:210-707-4283">Phone <i class="fa-solid fa-phone icon"></i>
+          </a>
       <a href="mailto: ryan.fann@gmail.com?subject=Nice Portfolio">Email
-        <img class="contactpic" src="assets/images/emailLogo.png"></a>
+        <i class="fa-solid fa-envelope icon"></i></a>
       <a href="https://github.com/8BitGinger">GitHub
-        <img class="contactpic" src="assets/images/githubLogo.png"></a>
+        <i class="fa-brands fa-github icon"></i></a>
       <a href="https://facebook.com/ryanfann">Social
-        <img class="contactpic" src="assets/images/fbLogo.png"></a>
+        <i class="fa-brands fa-facebook icon"></i></a>
       <a href="https://music.apple.com/us/playlist/current-stuff/pl.u-d2b0kMVupBjBG9">Music
-        <img class="contactpic" src="assets/images/applemusicLogo.png"></a>
+        <i class="fa-brands fa-apple icon"></i></a>
     </footer>
    
 </body>
