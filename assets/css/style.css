@@ -201,10 +201,7 @@ text-decoration: underline;
 
 }
 
-nav a:hover {
-color: rgb(19, 82, 134);
-text-transform: capitalize;
-}
+
 
 figure a img {
 width: 100%;
@@ -407,7 +404,7 @@ filter: none;
 .sidebar {
   text-decoration: none;
   justify-content: center;
-  font-size: 30px;
+  font-size: 25px;
   color: #818181;
   margin-top: 20px;
 }
@@ -422,7 +419,9 @@ filter: none;
 
 .sidebar a:hover {
   color:rgb(19, 82, 134);
-  text-decoration: overline;
+  text-decoration: underline;
+
+  transition: ease-in 0.1;
 }
 
 .aboutmetext {
@@ -457,10 +456,19 @@ margin: 25px;
   background-position: center;
 }
 
+.footer a {
+  background-image: url(../images/blueBackSoft.png);
+  background-size: cover;
+  padding: 15px;
+  border-radius: 20px;
+  color: navy;
+}
 
 .footer a:hover {
   scale: 1.1;
   transition: ease-in 0.4s;
+  border-radius: 20px;
+  box-shadow: inset 0px 0px 15px rgba(251, 251, 251, 0.081), 0 0 25px rgb(5, 197, 255);
 
 }
 
@@ -472,11 +480,7 @@ margin: 25px;
   margin: 3px;
 }
 
-.contactpic a {
-  margin-left: 0;
-  margin-right: 0;
-  -webkit-text-stroke: 1px blue;  
-}
+
 
 .contactpic:hover {
   scale: 1.1;
