@@ -36,9 +36,7 @@ div {
   flex-wrap: wrap;
 }
 
-div .aboutmetext {
-  justify-content: center;
-}
+
 
 section {
   display:flex;
@@ -66,7 +64,7 @@ font-family: 'Rajdhani';
   font-size: xx-large;
   margin-bottom: 10px;
   font-family: 'Dela Gothic One';
-  margin-left: -25px;
+  
 }
 
 a {
@@ -99,6 +97,7 @@ flex-direction: row;
 background-image: url(../images/blueBackLines.png);
 background-size: auto;
 text-align: center;
+justify-content: center;
 margin: auto;
 font-family: 'caveat';
 }
@@ -230,7 +229,14 @@ a img:focus {
 
 
 
+.remove-link {
+  text-decoration: none;
+  
+}
 
+a.remove-link {
+  color: inherit;
+}
 
 .card {
   
@@ -542,11 +548,10 @@ padding-left: 5px;
 }
 
 .matchOrange {
-  font-size: 20px;
+  font-size: 18px;
   color: rgb(220, 149, 17);
-    width:90%;
-    line-height: 2.5;
-  
+    width:100%;
+  margin-bottom: 15px;
     text-align: center;
     justify-content: center;
 }
@@ -665,22 +670,6 @@ padding-left: 5px;
     margin-bottom: 50px;
     }
     
-    
-    
-    
-    
-    .center {
-      font-size: 50px;
-      color: #2361c6;
-      text-decoration: none;
-      margin-bottom: 25px;
-      margin-right: 25px;
-      position: fixed;
-      bottom: 0;
-      right: 0;
-      z-index: 1;
-      opacity: 50%;
-    }
     
     .center h4:hover {
       color: #e60a0a;
@@ -846,8 +835,6 @@ padding-left: 5px;
       font-size: medium;
       width: 90%;
     }
-    
-
 
     
     .title {
@@ -929,6 +916,21 @@ padding-left: 5px;
       grid-column-end: 9;
       grid-row-start: 34;
       grid-row-end: 38;
+    }
+
+        
+    
+    .center {
+      font-size: 35px;
+      color: #fc0808;
+      text-decoration: none;
+      margin-bottom: 5px;
+      margin-right: 5px;
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      z-index: 1;
+      opacity: 50%;
     }
   }
 
