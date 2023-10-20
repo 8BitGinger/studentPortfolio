@@ -24,7 +24,7 @@ header {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 200px;
+  height: 100px;
   line-height: 50px;
   color: #ffffff;
   background-image: url(../images/blueBackLines.png);
@@ -106,7 +106,9 @@ aside a {
   margin-left: 8px;
 }
 
-
+#ryan {
+  background: none;
+}
 
 footer {
 bottom: 0;
@@ -153,6 +155,7 @@ h3 {
   right: 0;
   z-index: 1;
   opacity: 50%;
+  animation: center 2s ease infinite;
 }
 
 .center h4:hover {
@@ -574,6 +577,53 @@ padding-left: 5px;
   display: none;
  }
 
+ .orange {
+  animation
+ }
+
+ .highlight {
+  animation: bounce-in 8s ease infinite;
+}
+
+.orange {
+  animation: roll-in 2s ease 1;
+}
+@keyframes roll-in {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%) rotate(-120deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px) rotate(0deg);
+  }
+}
+
+
+@keyframes bounce-in {
+  0% {
+    opacity: 0;
+    transform: scale(.3);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  70% { transform: scale(.9); }
+  100% { transform: scale(1); }
+}
+
+
+@keyframes center {
+    70% { transform:translateY(0%); }
+    80% { transform:translateY(-15%); }
+    90% { transform:translateY(0%); }
+    95% { transform:translateY(-7%); }
+    97% { transform:translateY(0%); }
+    99% { transform:translateY(-3%); }
+    100% { transform:translateY(0); }
+}
+
 @media screen and (max-width: 992px) {
 
   
@@ -942,7 +992,7 @@ padding-left: 5px;
       color: #fc0808;
       text-decoration: none;
       margin-bottom: 5px;
-      margin-right: 5px;
+      margin-right: 15px;
       position: fixed;
       bottom: 0;
       right: 0;
