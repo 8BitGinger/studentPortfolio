@@ -594,7 +594,8 @@ padding-left: 5px;
    }
 
     header {
-      
+      background-size: cover;
+      background-position: 0%;
       width: 100vw;
       height: 100px;
       margin-left: 0;
