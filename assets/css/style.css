@@ -133,7 +133,7 @@ footer a {
 
 
 h3 {
-  color: rgb(255, 255, 255);
+  color: rgb(13, 88, 138);
   position: relative;
   font-size: medium;
 }
@@ -727,7 +727,7 @@ filter: none;
       
       grid-gap: 25px;
       width: 70%;
-
+      text-align: center;
       margin: auto;
       margin-top: 50px;
       margin-bottom: 0;
@@ -736,21 +736,21 @@ filter: none;
     
     .floatbox {
      
-      width: 170px;
- 
+      width: 70%;
+      color: #000000;
       margin-top:-100px;
       padding: 10px;
-      font-size: medium;
+      font-size: large;
       
     }
     
     .floatbox2 {
 
-      width: 170px;
- 
+      width: 70%;
+      color: black;
       margin-top:-100px;
       padding: 10px;
-      font-size: medium;
+      font-size: large;
      
     }
     
@@ -783,7 +783,10 @@ filter: none;
       padding: 0;
     }
   
-
+    h3 {
+      text-align: center;
+      margin: 0;
+    }
     
     .navlinks a {
       margin: 5px;
