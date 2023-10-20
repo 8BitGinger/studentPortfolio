@@ -270,8 +270,8 @@ p {
   background: white;
 background: linear-gradient(
   to right bottom,
-    rgba(0, 0, 0, 0.4),
-  rgba(255, 255, 255, 0.2)
+    rgba(0, 0, 0, 0.6),
+  rgba(9, 177, 219, 0.097)
     );
 
     webkit-backdrop-filter: blur(1rem);
@@ -314,7 +314,7 @@ border: 2px double rgb(4, 158, 185);
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(14, 5vw);
   grid-gap: 25px;
-  width: 80%;
+  width: 70%;
   justify-content: center;
   text-align: center;
   margin: auto;
