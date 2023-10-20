@@ -209,7 +209,7 @@ text-decoration: underline;
 
 figure a img {
 width: 100%;
-outline:8px solid rgba(11, 206, 240, 0.485);
+outline:5px solid rgba(0, 0, 0, 0.688);
 outline-offset: -5px;
 position: relative;
 }
@@ -418,7 +418,8 @@ filter: none;
 .floatbox {
   display:flex;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  background-color: rgba(11, 206, 240, 0.684);
+  background-color: rgba(0, 0, 0, 0.688);
+  color: rgb(26, 200, 227);
   width: 200px;
   position: absolute;
   margin-top:-100px;
@@ -432,7 +433,8 @@ filter: none;
 .floatbox2 {
   display: flex;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  background-color: rgba(11, 206, 240, 0.645);
+  background-color: rgba(0, 0, 0, 0.688);
+  color: rgb(26, 200, 227);
   width: 200px;
   position: absolute;
   margin-top:-100px;
