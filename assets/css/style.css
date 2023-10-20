@@ -59,7 +59,7 @@ font-family: 'Rajdhani';
 }
 
 .highlight {
-  color: dodgerblue;
+  color: rgb(17, 60, 103);
   text-align: center;
   width: 100%;
   font-size: xx-large;
@@ -231,11 +231,18 @@ a img:focus {
 
 
 .card {
-  display: flex;
-  flex-wrap: wrap;
-width: 20%;
-padding-bottom: 20%;
+  
+
+    width: 60%;
+    height: 60%;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
 }
+
 
 .card:hover {
   scale: 1.1;
@@ -258,7 +265,23 @@ text-align: right;
 padding: 20px;
 }
 
+p {
+  background: white;
+background: linear-gradient(
+  to right bottom,
+    rgba(255, 255, 255, 0.4),
+  rgba(255, 255, 255, 0.2)
+    );
 
+    webkit-backdrop-filter: blur(1rem);
+    border: 8px solid rgba(19, 220, 247, 0.178);
+    width: 70%;
+    color: rgb(255, 255, 255);
+    font-family: 'dela gothic one';
+    border-radius: 15px;
+    box-shadow: inset 0px 0px 15px rgb(251, 251, 251), 0 0 25px rgb(250, 250, 250);
+
+}
 
 .banner-text {
   padding: 5px;
@@ -290,7 +313,7 @@ border: 2px double rgb(4, 158, 185);
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(14, 5vw);
   grid-gap: 25px;
-  width: 80%;
+  width: 70%;
   justify-content: center;
   text-align: center;
   margin: auto;
@@ -304,7 +327,7 @@ border: 2px double rgb(4, 158, 185);
   height: 100%;
   object-fit: cover;
   object-position: center;
-  filter:blur(2px) grayscale(50%);
+  filter:blur(2px) grayscale(50%) ;
   align-content: center;
   border-radius: 7px;
 }
@@ -427,32 +450,13 @@ filter: none;
   transition: ease-in 0.1;
 }
 
-.aboutmetext {
-font-size: 20px;
-font-weight: 600;
-color: #0b3f8d;
-display: flex;
-flex-wrap: wrap;
-flex-direction: column;
-justify-content: center;
-text-align: center;
-border-radius: 25px;
-margin: 25px;
-} 
 
-.aboutmetext p {
-  text-align: left;
-  padding: 20px;
-  background-image: none;
-  width: 82%;
-  border-radius: 15px;
-  border: 8px solid rgb(19, 220, 247);
-  background: linear-gradient(90deg, #e3ffe7 0%, #7fd8fe 100%);
-}
 
 .aboutmetext p:hover {
   box-shadow: inset 0px 0px 15px rgb(251, 251, 251), 0 0 25px rgb(250, 250, 250);
-
+  border: 8px solid rgb(19, 220, 247);
+  background: linear-gradient(90deg, #e3ffe7 0%, #7fd8fe 100%);
+  color: navy;
 }
 
 .main-image {
@@ -460,18 +464,16 @@ margin: 25px;
 }
 
 .footer a {
-  background-image: url(../images/blueBackSoft.png);
-  background-size: cover;
-  padding: 15px;
-  border-radius: 20px;
-  color: navy;
+
+  padding: 10px;
+ 
+  color: rgb(255, 255, 255);
 }
 
 .footer a:hover {
   scale: 1.1;
-  transition: ease-in 0.4s;
-  border-radius: 20px;
-  box-shadow: inset 0px 0px 15px rgba(251, 251, 251, 0.081), 0 0 25px rgb(5, 197, 255);
+  transition: ease-in 0.2s;
+
 
 }
 
@@ -487,7 +489,7 @@ margin: 25px;
 
 .contactpic:hover {
   scale: 1.1;
-  transition: ease-in-out 0.4s;
+  transition: ease-in 0.8s;
 }
 
 
@@ -529,108 +531,66 @@ margin: 25px;
 
 
 @media screen and (max-width: 992px) {
-  .card {
-    width: 50%;
-  }
-  display: inline-block
 
-  .header {
-    height: 150%;
-  };
-  }
   
-  @media screen and (max-width: 768px) {
-  .card {
-    width: 50%;
-    min-width: 50%;
-    overflow: hidden;
-  }
-
-  .floatbox1{
-    font-size: smaller;
-    width: 18%;
-    overflow: hidden;
-    width: 100px;
-  }
-
-  p {
-    font-size: medium;
-  };
-
-  .floatbox2 {
-    width: 100px;
-    overflow: hidden;
-  }
-
-  h3 {
-    font-family: monospace;
-    font-size: small;
-  }
-
-  .contactpic{
-    max-block-size: 50px;
-  }
-
-  .aboutmetext p {
-    font-size: 18px;
-    flex-direction: column;
-    width: 80%;
-  }
-
-
-
-
-
-  footer {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-  }
-
-  footer a {
-    margin: 10px;
-    text-align: center;
-  }
-
- .header {
-  flex-direction: column;
-  height: 160px;
-  margin-bottom: 0px;
-
- }
-  h1 {
-    font-size: 40px;
-  }
-
-  h2 {
-    font-size: 18px;
-  }
-
-  .center {
-    font-size: 25px;
-  }
-
-  footer {
-    font-size: large;
-  }
-
- nav a {
-    font-size: medium;
-  }
-
-nav ul li {
-  margin: auto;
-  font-size: large;
+  
 }
-
-  }
-
   
   @media screen and (max-width: 576px) {
-  .card {
-    width: min-content;
+    .body{
+      width: 100%;
+      justify-content: center;
+   
+    }
+      .header {
+        width: 100vw;
+        height: 200px;
+        margin: 0;
+      }
+
+      .name {
+        width: 100%;
+        padding: 0 ;
+        margin: 0;
+      }
+
+      .title {
+        width: 100%;
+        padding: 0;
+      }
+      h1 {
+        width: 100%;
+        padding: 10px;
+      }
+    
+      .banner {
+        width: 100vw;
+        height: 250px;
+      }
+    
+      .banner-text {
+        font-size: x-large;
+      }
+    
+      p {
+        display:flex;
+       
+        flex-wrap: wrap;
+        flex-direction: row;
+        padding-left: 35px;
+        padding-bottom: 20px;
+        text-indent: 5%;
+        margin: auto;
+        margin-top: 30px;
+        font-family: 'Rajdhani';
+        }
+      
+      .aboutmetext {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
   }
-
-
 
 

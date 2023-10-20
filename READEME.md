@@ -1,9 +1,9 @@
 # Student Portfolio
-Challenge Week Two of UTSA Coding Bootcamp
+Created this for the challenge during Week Two of UTSA Coding Bootcamp
 
 ## Description
 
-The purpose of this project is to put the skills of CSS like flexbox and grid to use and some fun stylings
+The purpose of this project is to create a page to display the current and past projects to prospective employers.
 
 
 ## Notes
@@ -11,7 +11,7 @@ Media queries have been updated but the FloatBoxes are still giving me trouble. 
 
 ## Visuals
 Screenshot
-![screenshot](assets/images/live%20screenshot%20challenge%202.jpg)
+![screenshot](assets/images/live-screenshot-student-profile.jpg)
 
 
 ## Links
@@ -26,8 +26,6 @@ reach out to ryan.fann@gmail.com for questions or support issues
 
 ## Roadmap
 We will be adding Javascript future projects and other items to keep this a working Portfolio
-Need to update the Contact me links from Images to Icons via Font Awesome soon.
-
 
 ## Contributing:
 ```
