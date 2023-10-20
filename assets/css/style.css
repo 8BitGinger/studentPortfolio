@@ -416,7 +416,8 @@ filter: none;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   margin-left: 2px;
-
+  text-align: center;
+  justify-content: center;
 }
 
 
@@ -433,7 +434,8 @@ filter: none;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   margin-left: 1px;
-  
+  text-align: center;
+  justify-content: center;
 
 }
 
