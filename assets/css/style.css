@@ -241,18 +241,6 @@ a.remove-link {
   color: inherit;
 }
 
-.card {
-  
-
-    width: 60%;
-    height: 60%;
-    z-index: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5rem;
-    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
-}
 
 
 .card:hover {
@@ -425,8 +413,10 @@ filter: none;
   margin-top:-100px;
   padding: 10px;
   font-size: large;
-  border-radius: 5px;
-  
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin-left: 2px;
+
 }
 
 
@@ -440,7 +430,9 @@ filter: none;
   margin-top:-100px;
   padding: 10px;
   font-size: large;
-  border-radius: 5px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin-left: 1px;
   
 
 }
@@ -845,7 +837,7 @@ padding-left: 5px;
       margin-top:-100px;
       padding: 10px;
       font-size: large;
-      
+      border-radius: 0;
     }
     
     .floatbox2 {
@@ -855,7 +847,7 @@ padding-left: 5px;
       margin-top:-100px;
       padding: 10px;
       font-size: large;
-     
+      border-radius: 0;
     }
     
     .sidebar {
