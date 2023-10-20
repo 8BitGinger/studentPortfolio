@@ -59,7 +59,7 @@ font-family: 'Rajdhani';
 }
 
 .highlight {
-  color: rgb(14, 134, 254);
+  color: rgb(0, 162, 255);
   text-align: center;
   width: 100%;
   font-size: xx-large;
@@ -521,9 +521,28 @@ filter: none;
 }
 
 .orange {
-  font-size: 35px;
+  font-size: 25px;
   color: rgb(220, 149, 17);
-  background-color: green;
+  width: fit-content;
+  border-radius: 8px;
+  justify-content: center;
+  padding: 2px;
+padding-left: 5px;
+  padding-right: 15px;
+  align-items: center;
+  text-align: left;
+  background-color: navy;
+  font-family:Helvetica, sans-serif;
+  font-weight: 800;
+  letter-spacing: -5px;
+}
+
+.matchOrange {
+  font-size: 20px;
+  color: rgb(220, 149, 17);
+    width: 70%;
+    line-height: 2;
+    margin-right: -5px;
 }
 
 .lowercase {
@@ -603,7 +622,28 @@ filter: none;
     }
 
     
+    .orange {
+      font-size: 25px;
+      color: rgb(220, 149, 17);
+      width: fit-content;
+      height: fit-content;
+      border-radius: 8px;
+      justify-content: center;
+      padding: 2px;
+      margin: auto;
+      margin-top: 20px;
+      padding-right: 20px;
+      align-items: center;
+
+    }
     
+    .matchOrange {
+      font-size: 20px;
+      color: rgb(220, 149, 17);
+        width: 50%;
+        line-height: 1;
+        margin-right: -5px;
+    }
     
     footer {
     bottom: 0;
