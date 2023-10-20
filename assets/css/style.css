@@ -216,7 +216,10 @@ position: relative;
 
 a img:hover {
   box-shadow: inset 0px 0px 15px rgb(251, 251, 251), 0 0 25px rgb(250, 250, 250);
+  
 }
+
+
 
 /* The user is actively pressing down on the element */
 a img:active {
@@ -340,6 +343,8 @@ filter: none;
   font-family: 'pixelify sans';
 }
 
+
+
 .gallery__item--1 {
   grid-column-start: 1;
   grid-column-end: 9;
@@ -407,7 +412,7 @@ filter: none;
   display:flex;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   background-color: rgba(0, 0, 0, 0.688);
-  color: rgb(26, 200, 227);
+  color: rgb(0, 221, 255);
   width: 200px;
   position: absolute;
   margin-top:-100px;
@@ -425,7 +430,7 @@ filter: none;
   display: flex;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   background-color: rgba(0, 0, 0, 0.688);
-  color: rgb(26, 200, 227);
+  color: rgb(1, 221, 255);
   width: 200px;
   position: absolute;
   margin-top:-100px;
@@ -437,6 +442,10 @@ filter: none;
   text-align: center;
   justify-content: center;
 
+}
+
+figure:hover {
+  scale: 1.05;
 }
 
 .sidebar {
@@ -557,6 +566,7 @@ padding-left: 5px;
 
 .lowercase {
   text-transform: lowercase;
+ 
 }
 
 .title {
