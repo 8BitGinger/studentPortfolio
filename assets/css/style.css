@@ -306,7 +306,7 @@ border: 2px double rgb(4, 158, 185);
 
 .headshot:hover {
   scale: 1.13;
-  
+  transition: ease-in .3s;
 
 }
 
@@ -937,7 +937,7 @@ padding-left: 5px;
     .gallery {
       display: grid;
       grid-template-columns: repeat(8, 1fr);
-      grid-template-rows: repeat(38, 5vw);
+      grid-template-rows: repeat(46, 5vw);
     }
     
     
