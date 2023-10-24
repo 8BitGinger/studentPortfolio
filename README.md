@@ -1,13 +1,12 @@
 # Student Portfolio
-Created this for the challenge during Week Two of UTSA Coding Bootcamp
 
 ## Description
 
-The purpose of this project is to create a page to display the current and past projects to prospective employers.
+The purpose of this project is to create a page to display the current and past projects to prospective employers, other developers, and others.
 
 
 ## Notes
-Media queries have been updated but the FloatBoxes are still giving me trouble.  Will need to Adjust.
+The mobile version has been an interesting redesign and a lot of fun!
 
 ## Visuals
 Screenshot
