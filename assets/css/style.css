@@ -314,7 +314,7 @@ border: 2px double rgb(4, 158, 185);
 .gallery {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(15, 5vw);
+  grid-template-rows: repeat(12, 5vw);
   grid-gap: 25px;
   width: 70%;
   justify-content: center;
@@ -360,81 +360,116 @@ filter: none;
 
 .gallery__item--2 {
   grid-column-start: 1;
-  grid-column-end: 5;
+  grid-column-end: 3;
   grid-row-start: 6;
   grid-row-end: 8;
 }
 
 .gallery__item--3 {
-  grid-column-start: 5;
-  grid-column-end: 9;
+  grid-column-start: 3;
+  grid-column-end: 5;
   grid-row-start: 6;
   grid-row-end: 8;
 }
 
 .gallery__item--4 {
-  grid-column-start: 1;
-  grid-column-end: 5;
-  grid-row-start: 8;
-  grid-row-end: 10;
+  grid-column-start: 5;
+  grid-column-end: 7;
+  grid-row-start: 6;
+  grid-row-end: 8;
 }
 
 .gallery__item--5 {
-  grid-column-start: 5;
+  grid-column-start: 7;
   grid-column-end: 9;
-  grid-row-start: 8;
-  grid-row-end: 10;
+  grid-row-start: 6;
+  grid-row-end: 8;
 }
 
 .gallery__item--6 {
   grid-column-start: 1;
-  grid-column-end: 5;
-  grid-row-start: 10;
-  grid-row-end: 12;
+  grid-column-end: 3;
+  grid-row-start: 8;
+  grid-row-end: 10;
 }
 
 .gallery__item--7 {
-  grid-column-start: 5;
-  grid-column-end: 9;
-  grid-row-start: 10;
-  grid-row-end: 12;
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 8;
+  grid-row-end: 10;
 }
 
 .gallery__item--8 {
-  grid-column-start: 1;
-  grid-column-end: 5;
-  grid-row-start: 12;
-  grid-row-end: 14;
+  grid-column-start: 5;
+  grid-column-end: 7;
+  grid-row-start: 8;
+  grid-row-end: 10;
 }
 
 .gallery__item--9 {
-  grid-column-start: 5;
+  grid-column-start: 7;
   grid-column-end: 9;
-  grid-row-start: 12;
-  grid-row-end: 14;
+  grid-row-start: 8;
+  grid-row-end: 10;
 }
 
 
 .gallery__item--10 {
   grid-column-start: 1;
-  grid-column-end: 5;
-  grid-row-start: 14;
-  grid-row-end: 16;
+  grid-column-end: 3;
+  grid-row-start: 10;
+  grid-row-end: 12;
 }
 
 .gallery__item--11 {
-  grid-column-start: 5;
-  grid-column-end: 9;
-  grid-row-start: 14;
-  grid-row-end: 16;
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 10;
+  grid-row-end: 12;
 }
 
-.gallery__item--a {
-  grid-column-start: 1;
-  grid-column-end: 9;
-  grid-row-start: 16;
-  grid-row-end: 17;
+.gallery__item--12 {
+  grid-column-start: 5;
+  grid-column-end: 7;
+  grid-row-start: 10;
+  grid-row-end: 12;
 }
+
+.gallery__item--13 {
+  grid-column-start: 7;
+  grid-column-end: 9;
+  grid-row-start: 10;
+  grid-row-end: 12;
+}
+/*
+.gallery__item--14 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 12;
+  grid-row-end: 14;
+}
+
+.gallery__item--15 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 12;
+  grid-row-end: 14;
+}
+
+.gallery__item--16 {
+  grid-column-start: 5;
+  grid-column-end: 7;
+  grid-row-start: 12;
+  grid-row-end: 14;
+}
+
+.gallery__item--17 {
+  grid-column-start: 7;
+  grid-column-end: 9;
+  grid-row-start: 12;
+  grid-row-end: 14;
+} */
 
 
 
@@ -960,7 +995,7 @@ padding-left: 5px;
       margin-top: 0;
       display: grid;
       grid-template-columns: repeat(8, 1fr);
-      grid-template-rows: repeat(46, 5vw);
+      grid-template-rows: repeat(54, 5vw);
     }
     
     
@@ -1051,6 +1086,50 @@ padding-left: 5px;
       grid-row-end: 46;
     }
 
+    .gallery__item--12 {
+      grid-column-start: 1;
+      grid-column-end: 9;
+      grid-row-start: 46;
+      grid-row-end: 50;
+    }
+    
+    .gallery__item--13 {
+      grid-column-start: 1;
+      grid-column-end: 9;
+      grid-row-start: 50;
+      grid-row-end: 54;
+    }
+    
+    /* .gallery__item--14 {
+      grid-column-start: 1;
+      grid-column-end: 9;
+      grid-row-start: 54;
+      grid-row-end: 58;
+      
+    }
+    
+    .gallery__item--15 {
+      grid-column-start: 1;
+      grid-column-end: 9;
+      grid-row-start: 58;
+      grid-row-end: 62;
+     
+    }
+    
+    .gallery__item--16 {
+      grid-column-start: 1;
+      grid-column-end: 9;
+      grid-row-start: 62;
+      grid-row-end: 66;
+      
+    }
+    
+    .gallery__item--17 {
+      grid-column-start: 1;
+      grid-column-end: 9;
+      grid-row-start: 66;
+      grid-row-end: 70;
+       */
         
     
     .center {
