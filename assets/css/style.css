@@ -348,7 +348,7 @@ filter: none;
   grid-column-start: 1;
   grid-column-end: 9;
   grid-row-start: 1;
-  grid-row-end: 2;
+  grid-row-end: 1;
 }
 
 .gallery__item--1 {
@@ -646,8 +646,9 @@ padding-left: 5px;
 .section-title {
   width: 100%;
   font-size: x-large;
-  padding: 10px;
+  padding: 5px;
   color: rgb(0, 162, 255);
+  margin-bottom: 50px;
 }
  .wrap {
   display: flex;
@@ -878,7 +879,7 @@ padding-left: 5px;
     .banner {
     
     width: 100vw;
-    height: 230px;
+    height: 240px;
 
     padding: 20px;
     }
