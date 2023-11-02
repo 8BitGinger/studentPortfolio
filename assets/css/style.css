@@ -555,15 +555,16 @@ figure:hover {
 .footer a {
 
   padding: 10px;
- 
+  font-family: 'Dela Gothic One';
+  font-size: x-large;
   color: rgb(255, 255, 255);
 }
 
 .footer a:hover {
   scale: 1.1;
   transition: ease-in 0.2s;
-
-
+  color: dodgerblue;
+  
 }
 
 .contactpic{
