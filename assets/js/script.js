@@ -8,5 +8,5 @@ $('.link').on('click', function () {
   window.onload = function() {
     var obj = document.createElement('audio');
     obj.src = './assets/audio/rockNroll.mp3'; 
-    obj.play(); 
+    obj.play();
   };
