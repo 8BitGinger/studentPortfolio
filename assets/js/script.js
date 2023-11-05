@@ -5,8 +5,8 @@ $('.link').on('click', function () {
     obj.play(); 
   });
 
-  window.onload = function() {
+  $('.headshot').on('click', function () { 
     var obj = document.createElement('audio');
     obj.src = './assets/audio/rockNroll.mp3'; 
     obj.play();
-  };
+  });
