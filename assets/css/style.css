@@ -48,13 +48,28 @@ p {
 display:flex;
 flex-wrap: wrap;
 flex-direction: column;
-justify-content: center;
+
 text-align: center;
 padding: 20px;
 
 margin: auto;
 margin-top: 30px;
 font-family: 'Rajdhani';
+font-size: 25px;
+background: linear-gradient(
+  to right bottom,
+    rgba(0, 0, 0, 0.6),
+  rgba(9, 177, 219, 0.097)
+    );
+
+    webkit-backdrop-filter: blur(1rem);
+    border: 1px solid rgba(255, 255, 255, 0.178);
+    width: 70%;
+    color: rgb(255, 255, 255);
+    
+    border-radius: 15px;
+    box-shadow: inset 0px 0px 3px rgb(251, 251, 251), 0 0 25px rgb(250, 250, 250);
+  justify-content: center;
 }
 
 .highlight {
@@ -277,23 +292,7 @@ text-align: right;
 padding: 20px;
 }
 
-p {
-  background: white;
-background: linear-gradient(
-  to right bottom,
-    rgba(0, 0, 0, 0.6),
-  rgba(9, 177, 219, 0.097)
-    );
 
-    webkit-backdrop-filter: blur(1rem);
-    border: 1px solid rgba(255, 255, 255, 0.178);
-    width: 70%;
-    color: rgb(255, 255, 255);
-    font-family: 'dela gothic one';
-    border-radius: 15px;
-    box-shadow: inset 0px 0px 3px rgb(251, 251, 251), 0 0 25px rgb(250, 250, 250);
-  justify-content: center;
-}
 
 .banner-text {
   padding: 5px;
@@ -317,6 +316,7 @@ border: 2px double rgb(4, 158, 185);
 .headshot:hover {
   scale: 1.13;
   transition: ease-in .2s;
+  cursor:crosshair;
 
 }
 
@@ -373,6 +373,7 @@ filter: none;
 .gallery__item {
   background-color: rgba(255, 255, 255, 0.516);
   border-radius: 10px;
+  position: relative;
 }
 
 .gallery__item--z:hover {
@@ -381,6 +382,8 @@ filter: none;
 
 .name {
   font-family: 'pixelify sans';
+  color: rgb(255, 166, 0);
+  -webkit-text-stroke: #ffffff 1px;
 }
 
 .gallery__item--z{
@@ -514,17 +517,14 @@ filter: none;
 
 .floatbox {
   display:flex;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  background-color: rgba(0, 0, 0, 0.688);
-  color: rgb(0, 221, 255);
-  width: 200px;
+  font-family: 'rajdhani';  background-image: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 128, 255, 0.649));
+  color: white;
+  width: 100%;
   position: absolute;
   margin-top:-100px;
   padding: 10px;
   font-size: large;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
-  margin-left: 2px;
+  border-radius: 3px;
   text-align: center;
   justify-content: center;
 }
@@ -532,17 +532,16 @@ filter: none;
 
 .floatbox2 {
   display: flex;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  background-color: rgba(0, 0, 0, 0.688);
-  color: rgb(1, 221, 255);
-  width: 200px;
+  font-family: 'rajdhani';
+  background-image: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 128, 255, 0.649));
+  color: white;
+  width: 100%;
   position: absolute;
   margin-top:-100px;
   padding: 10px;
   font-size: large;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
-  margin-left: 1px;
+
+
   text-align: center;
   justify-content: center;
 
@@ -561,8 +560,18 @@ figure:hover {
   margin-top: 20px;
 }
 
-.sidebar a {
+.icon {
   color: white;
+}
+
+.link {
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar a {
+  color: orange;
+-webkit-text-stroke: white .15px;
   text-decoration: none;
   text-align: center;
   font-size: 30px;
@@ -570,10 +579,10 @@ figure:hover {
 
 }
 
-.sidebar a:hover {
-  color:rgb(19, 82, 134);
+.sidebar a:hover,
+.icon:hover {
   text-decoration: underline;
-
+  
   transition: ease-in 0.3s;
   
 }
@@ -671,6 +680,7 @@ padding-left: 5px;
   margin-bottom: 15px;
     text-align: center;
     justify-content: center;
+    font-family: 'dela gothic one';
 }
 
 .lowercase {
@@ -945,7 +955,7 @@ padding-left: 5px;
         flex-direction: row;
         width: 80%;
         margin-bottom: 30px;
-    
+      font-size: 15px;
     }
     
     .banner-text {
@@ -974,26 +984,21 @@ padding-left: 5px;
     }
     
     
-    .floatbox {
+    .floatbox, .floatbox2 {
      
       background-color: rgba(0, 0, 0, 0.688);
-      width: 70%;
-      color: rgb(26, 200, 227);
-      margin-top:-100px;
+   
+      color: orange;
+      margin-top:-70px;
       padding: 10px;
-      font-size: large;
+     
       border-radius: 0;
+      width: 100%;
+     
+      font-size: small;
     }
     
-    .floatbox2 {
-      background-color: rgba(0, 0, 0, 0.688);
-      width: 70%;
-      color: rgb(26, 200, 227);
-      margin-top:-100px;
-      padding: 10px;
-      font-size: large;
-      border-radius: 0;
-    }
+
     
     .sidebar {
       font-size: 25px;
@@ -1029,17 +1034,7 @@ padding-left: 5px;
       margin: 0;
     }
 
-    .floatbox {
-      width: fit-content;
-      max-width: 50%;
-      font-size: small;
-    }
-
-    .floatbox2 {
-      width: fit-content;
-      max-width: 50%;
-      font-size: small;
-    }
+ 
     
     .navlinks a {
       margin: 5px;
