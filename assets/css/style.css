@@ -101,8 +101,9 @@ nav {
   margin: auto;
   margin-top: 30px;
   border-radius: 5px;
-  border: 1px solid rgba(30, 143, 255, 0.733);
-  width: 70%;
+  border: 2px solid rgba(30, 143, 255, 0.733);
+  width: fit-content;
+  border-radius: 15px;
 
 }
 
@@ -562,9 +563,7 @@ figure:hover {
   margin-top: 20px;
 }
 
-.icon {
-  color: white;
-}
+
 
 .link {
   margin: 0;
@@ -572,7 +571,7 @@ figure:hover {
 }
 
 .sidebar a {
-  color: orange;
+  color: rgb(255, 255, 255);
   text-decoration: none;
   text-align: center;
   font-size: 30px;
@@ -580,11 +579,10 @@ figure:hover {
 
 }
 
-.sidebar a:hover,
-.icon:hover {
+.sidebar a:hover {
   text-decoration: underline;
-  
-  transition: ease-in 0.3s;
+  color: orange;
+  transition: ease-in 0.1s;
   
 }
 
