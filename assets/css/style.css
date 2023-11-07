@@ -552,7 +552,7 @@ filter: none;
 
 figure:hover {
   scale: 1.05;
-  transition: ease-in 0.3s;
+  transition: ease-in 0.1s;
 }
 
 .sidebar {
