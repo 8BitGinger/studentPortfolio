@@ -677,8 +677,8 @@ figure:hover {
 }
 
 .skill-pic {
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   border: 2px solid rgba(77, 161, 245, 0.745)
 }
@@ -961,19 +961,41 @@ padding-left: 5px;
       flex-direction: column;
       margin-top: 20px;
       width: 80%;
+      margin-bottom: 25px;
     }
 
     .skill {
       justify-content: center;
       margin: auto;
+  
       align-items: center;
       align-content: center;
+    }
+
+    .skill-pic {
+      width: 150px;
+      height: 150px;
+    }
+
+    .subtitle2 {
+      font-size: 30px;
+      margin: 5px;
+      margin-bottom: 10px;
+    }
+
+    .skill-text {
+      font-size: large;
     }
     
     nav {
       display: flex;
       flex-wrap: wrap;
       align-items: flex-end;
+    }
+
+    .skill-pic:hover {
+      scale: 1.5;
+      transition: ease-in 0.5s;
     }
     
     nav ul {
