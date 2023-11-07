@@ -1,37 +1,56 @@
+
+<a id="badges"></a>
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+
 # Student Portfolio
 
 ## Description
-
-The purpose of this project is to create a page to display the current and past projects to prospective employers, other developers, and others.
-
-
-## Notes
-The mobile version has been an interesting redesign and a lot of fun!
-
-## Visuals
-Screenshot
-![screenshot](assets/images/live-screenshot-student-profile.jpg)
+A project to create a landing page to display current and past projects to prospective employers, other developers, and others.
 
 
-## Links
 
-```
-Live URL: https://8bitginger.github.io/studentPortfolio/
-Repo URL: https://github.com/8BitGinger/studentPortfolio
-```
+## Table of Contents
+1. [Screenshot](#screenshot)
+2. [Roadmap](#roadmap)
+5. [License](#license)
+7. [Links](#links)
+8. [Questions](#support)
 
-## Support
-reach out to ryan.fann@gmail.com for questions or support issues
+---
 
+<a id="screenshot"></a>
+## Screenshot
+> ![screenshot](./assets/images/live-screenshot-student-profile.jpg)
+
+---
+
+<a id="roadmap"></a>
 ## Roadmap
-We will be adding Javascript future projects and other items to keep this a working Portfolio
+Will be adding future projects as well as additional JS code and possibly 3rd Party APIs
 
-## Contributing:
-```
-used for Grids :
-https://www.freecodecamp.org/news/how-to-create-an-image-gallery-with-css-grid-e0f0fd666a5c/
-```
 
+<a id="license"></a>
 ## License
+[MIT](https://opensource.org/licenses/MIT)
 
-[MIT](https://choosealicense.com/licenses/mit/)
+---
+
+<a id="links"></a>
+## Links
+### Repo Link:
+ https://github.com/8BitGinger/studentPortfolio/
+### Deployed Link:
+https://8bitginger.github.io/studentPortfolio/
+
+
+---
+
+<a id="support"></a>
+## Questions
+Reach out for Questions or Support here:
+### Email: 
+ryan.fann@gmail.com
+#### GitHub Username: 
+[8BitGinger](https://github.com/8BitGinger)
+
