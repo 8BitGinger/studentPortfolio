@@ -1009,6 +1009,14 @@ padding-left: 5px;
       font-family: 'caveat';
       font-size: 25px;
     }
+
+    .resume {
+      font-family: 'rajdhani';
+      text-align: center;
+      width: 80%;
+      justify-content: center;
+      margin: auto;
+    }
     
     nav {
 
@@ -1096,7 +1104,7 @@ padding-left: 5px;
     .modal p {
       width: 99%;
       padding: 5px;
-      m
+      
     }
 
     .skills {
@@ -1125,8 +1133,12 @@ padding-left: 5px;
       margin-bottom: 10px;
     }
 
-    .skill-text {
+    .skill-text h4{
       font-size: large;
+      display: flex;
+      flex-direction: column;
+      font-size: smaller;
+      width: 100%;
     }
     
     nav {
@@ -1136,7 +1148,7 @@ padding-left: 5px;
     }
 
     .skill-pic:hover {
-      scale: 1.4;
+      scale: 1.2;
       transition: ease-in 0.5s;
     }
     
@@ -1428,6 +1440,32 @@ padding-left: 5px;
     .fp {
       display: none;
     }
+
+    .skill-text{
+      
+      display: flex;
+      flex-direction: column;
+      font-size: smaller;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      margin: 10px;
+      color: dodgerblue;
+      padding: 0;
+      position: absolute;
+    }
+
+    .skill-pic {
+      margin-top: 20px;
+      position: relative;
+      
+    }
+
+    .resume {
+      margin-top: 20px;
+    }
+    
     
     /* .gallery__item--14 {
       grid-column-start: 1;
@@ -1475,5 +1513,6 @@ padding-left: 5px;
     }
 
   
-  }
+  } */
 
+}
