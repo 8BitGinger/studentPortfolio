@@ -1445,15 +1445,17 @@ padding-left: 5px;
       
       display: flex;
       flex-direction: column;
-      font-size: smaller;
+      font-size: medium;
       text-align: center;
       justify-content: center;
       align-items: center;
       width: 100%;
       margin: 10px;
-      color: dodgerblue;
+      color: rgb(255, 255, 255);
+      -webkit-text-stroke: .5px rgb(0, 0, 0);
       padding: 0;
       position: absolute;
+      font-family: 'dela gothic one';
     }
 
     .skill-pic {
