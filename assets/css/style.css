@@ -675,6 +675,7 @@ figure:hover {
 .skill:hover {
   scale: 1.5;
   transition: ease-in 0.3s;
+  z-index:1;
 }
 
 .skill-pic {
