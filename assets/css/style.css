@@ -1087,6 +1087,18 @@ padding-left: 5px;
 
     }
 
+    .modal h1 {
+      font-size: 20px;
+      margin-left: 10px;
+      
+    }
+
+    .modal p {
+      width: 99%;
+      padding: 5px;
+      m
+    }
+
     .skills {
       flex-direction: column;
       margin-top: 20px;
