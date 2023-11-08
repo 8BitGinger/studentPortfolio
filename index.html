@@ -3,26 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--This is for custom Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Dancing+Script&family=Dela+Gothic+One&family=Pixelify+Sans:wght@600&family=Rajdhani&display=swap" rel="stylesheet">
+    
+    <!--This is for Font Awesome Icons-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
-
+    <!--This is for my custom CSS-->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
     <title>Student Portfolio - Ryan Fann</title>
 </head>
+
 <body>
+<!--This is the header-->
     <header class="header">
         <a class="remove-link" href="#ryan"><h1 class="title link">  Ryan J. <span class="name" > Fann </span>  </h1></a>
         <img src="./assets/images/headshot-80sback.png" class="headshot-mobile">
     </header>
+
+<!--This is the quote banner-->
   <div class="wrap">
     <div class="banner">
       <h2 class="banner-text"> "If we want users to like our software, we should design it to behave like a likeable person."  – Alan Cooper</h2>
       
     </div>
-    
+
+<!--This is the Fixed Sidebar-->
     <aside>
         <div class="sidebar">
           <img class="headshot" src="./assets/images/headshot-80sback.png">
@@ -38,6 +47,21 @@
         </div>
     </aside>
 
+<!--This is the Starting Modal-->
+  <div>
+      <button id="open" class="hide">HIDDEN MODAL BUTTON</button>
+      <div class="modal-container" id="modal-container">
+        <div class="modal skills">
+          <h1>Pop ups aren't <span class="emoji">😎</span></h1>
+          <p>But neither is missing out on all the fun.  This page has video and sound so make sure both are enabled for maximum enjoyment!</p>
+          <button id="close">Click here to see my Portfolio!</button>
+
+        </div>
+      </div>
+  </div>
+      
+
+<!--This is the Intro Paragraph-->
     <div id="aboutme"  class="aboutmetext" >
       <p> 
         <span class="highlight" id="ryan">Hi, I’m Ryan!</span><span class="matchOrange">I am Full-Stack Web Development Student through</span> <span class="orange"> UTSA </span>
@@ -54,7 +78,7 @@
     </div>
 
 
-
+<!--This is the Grid section for My Projects-->
     <section class ="gallery" >
       <div class="card" >  </div>
           <figure class="gallery__item gallery__item--1">
@@ -171,7 +195,7 @@
 
         </div>
     </section>
-
+<!--This is a simple core graphic representation of core skills-->
     <section class="skills" id="skills">
       <h3 class="subtitle2">Core Skills</h3>
       <div class="skill">
@@ -190,13 +214,13 @@
         <img src="./assets/images/customerService.png" alt="code block" class="skill-pic">
         <h4 class="skill-text">Sales <br> 10+ Years</h4>
       </div>
-
+      <a href="https://8bitginger.github.io/resume/" class="resume">Full Resume Here</a>
     </section>
-    
+    <!--This is the floating REPO symbol-->
     <a class="center" href="https://github.com/8BitGinger/studentPortfolio/">
       <h4  class="text-adj"><i class="fa-solid fa-code link"></i> </h4>
     </a>
-
+<!--The Footer/Contact Me section-->
     <footer id="contactme" class="footer">
       <a  href="tel:210-707-4283">Phone <i class="fa-solid fa-phone icon link"></i>
           </a>
@@ -209,7 +233,8 @@
       <a href="https://music.apple.com/us/playlist/current-stuff/pl.u-d2b0kMVupBjBG9">Music
         <i class="fa-brands fa-apple icon link"></i></a>
     </footer>
-    <!--Need to add JS script Link and jQuery to allow click sounds-->
+
+    <!--My Scripts, DayJS, jQuery, and personal JS-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.10/dayjs.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="assets/js/script.js"></script>

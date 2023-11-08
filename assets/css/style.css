@@ -673,13 +673,13 @@ figure:hover {
 }
 
 .skill:hover {
-  scale: 1.2;
+  scale: 1.5;
   transition: ease-in 0.3s;
 }
 
 .skill-pic {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   border: 2px solid rgba(77, 161, 245, 0.745);
   box-shadow: inset 0px 0px 15px rgb(251, 251, 251), 0 0 25px rgb(250, 250, 250);
@@ -795,6 +795,133 @@ padding-left: 5px;
 .orange {
   animation: roll-in 2s ease 1;
 }
+
+.resume {
+  color: white;
+  font-size: larger;
+  text-decoration: none;
+  margin: 10px;
+  background-color: rgba(30, 143, 255, 0.745);
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.resume:hover {
+  scale: 1.05;
+}
+
+.modal-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-image: url(../images/brickback.jpg);
+  background-size: contain;
+  background-position: center;  display: flex;
+  align-items: center;
+  justify-content: center;
+ z-index: 2;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  max-width: 100%;
+  padding: 20px;
+  border-radius: 18px;
+  background: linear-gradient(90deg, #1cb5e0d5 0%, #000851c2 100%);
+
+}
+
+.modal p {
+ 
+  border: none;
+  color: #ffffff;
+  box-shadow: none;
+  background: none;
+
+    backdrop-filter: none;
+    border: none;
+    color: rgb(255, 255, 255);
+    border-radius: 15px;
+    box-shadow: none;
+  margin-top: 0;
+  margin-bottom: 25px;
+
+}
+
+.modal h1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  font-family: 'dela gothic one';
+  align-items: center;
+  font-size: 35px;
+  margin-right: 0;
+  margin-bottom: 0;
+}
+
+#open, #close {
+  background-color: dodgerblue;
+  color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0, 0.2);
+  width: 150px;
+  margin: auto;
+  text-align: center;
+  height: fit-content;
+  padding: 5px;
+  font-size: large;
+}
+
+#open:hover, #close:hover {
+  scale: 1.05;
+  cursor: pointer;
+}
+
+.hide {
+  display: none;
+}
+
+.emoji {
+  animation: wiggle 2s linear infinite;
+  font-size: 80px;
+  margin-right: 20px;
+  margin-left: 0;
+}
+
+/* Keyframes */
+@keyframes wiggle {
+  0%, 7% {
+    transform: rotateZ(0);
+  }
+  15% {
+    transform: rotateZ(-15deg);
+  }
+  20% {
+    transform: rotateZ(10deg);
+  }
+  25% {
+    transform: rotateZ(-10deg);
+  }
+  30% {
+    transform: rotateZ(6deg);
+  }
+  35% {
+    transform: rotateZ(-4deg);
+  }
+  40%, 100% {
+    transform: rotateZ(0);
+  }
+}
+
+
+
+
 @keyframes roll-in {
   0% {
     opacity: 0;
