@@ -881,6 +881,12 @@ padding-left: 5px;
   font-size: large;
 }
 
+.paraPop {
+  width: 100%;
+  margin: 5px;
+  padding: 0;
+}
+
 #open:hover, #close:hover {
   scale: 1.05;
   cursor: pointer;
