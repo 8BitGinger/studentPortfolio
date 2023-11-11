@@ -21,7 +21,9 @@ A project to create a landing page to display current and past projects to prosp
 
 <a id="screenshot"></a>
 ## Screenshot
-> ![screenshot](./assets/images/live-screenshot-student-profile.jpg)
+> ![screenshot](./assets/images/portfolio-screenshot.png)
+> ![screenshot](./assets/images/portfolio-screenshot-mobile.png)
+
 
 ---
 

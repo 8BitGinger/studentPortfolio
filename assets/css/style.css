@@ -1323,15 +1323,7 @@ input {
     }
     
   
-    .aboutmetext p {
-    padding: 20px;
-    text-indent: 10%;
-    margin-left: 10px;
-    margin: auto;
-    margin-top: 30px;
-    font-family: 'Rajdhani';
   
-    }
     
     .highlight {
       width: 100%;
@@ -1560,14 +1552,21 @@ input {
 
     padding: 20px;
     }
+
+    .aboutmetext div {
+      width: 100%;
+    }
     
     .aboutmetext p {
         flex-direction: row;
-        width: 80%;
+        width: 100%;
+        margin: auto;
         margin-bottom: 30px;
       font-size: 17px;
+      padding: 8px;
     }
-    
+
+
     .banner-text {
       padding: 20px;
       margin: 20px;
@@ -1945,20 +1944,22 @@ input {
     }
     
     .weather-card {
-      scale: .70;
+      scale: .80;
       position:static;
       width: 100%;
       background: linear-gradient(135deg, #0098feac, rgba(20, 10, 116, 0.753));
       color: #fff;
       margin: auto;
-      height: fit-content;
-      border-radius: 25px;
-      padding: 20px 35px;
+      height: 350px;
+      width: 350px;
+     
+      border-radius: 50%;
+      padding: 10px 25px;
       text-align: center;
       border: 2px double rgba(255, 255, 255, 0.705);
       z-index: 0;
-      margin-top: -35px;
-      margin-bottom: -55px;
+      margin-top: -25px;
+     
     }
     
     .weather {
@@ -1991,7 +1992,9 @@ input {
     }
 
     .details {
-      display: none;
+      display: flex;
+      background-color: none;
+      border-radius: 0;
     }
 
     .search input {
@@ -1999,8 +2002,9 @@ input {
       height: 45px;
       border-radius: 30px;
       flex: 1;
-      font-size: 18px;
+      font-size: 14px;
       width: 13px;
+      
     }
     
     .search {
@@ -2008,7 +2012,7 @@ input {
       margin: auto;
       text-align: center;
       justify-content: center;
-      
+      width: 100%;
       margin-bottom: 0;
     }
 
@@ -2025,12 +2029,18 @@ input {
     }
 
 
-    
-    
-    .col {
-      display: none;      
+    input {
+      width: 100%;
     }
     
+    .col {
+
+    }
+
+    .col p{
+      font-size: large;
+    }
+ 
     
     .weather h1 {
       font-size: 50px;
