@@ -89,6 +89,7 @@ nav {
   border-radius: 5px;
   border: 2px solid rgba(30, 143, 255, 0.733);
   width: fit-content;
+  max-width: 90%;
   border-radius: 15px;
   box-shadow: 30px 30px 30px rgba(6, 6, 7, .5);
 
