@@ -15,6 +15,8 @@ body {
   background-image: url(../images/brickback.jpg);
   background-size: contain;
   background-position: center;
+  flex-direction: row;
+  
 }
 
 header {
@@ -34,6 +36,7 @@ header {
 div {
   display: flex;
   flex-wrap: wrap;
+  
 }
 
 
@@ -50,24 +53,7 @@ flex-wrap: wrap;
 flex-direction: column;
 
 text-align: center;
-padding: 20px;
-
-margin: auto;
-margin-top: 30px;
 font-family: 'Rajdhani';
-font-size: 25px;
-background: linear-gradient(
-  to right bottom,
-    rgba(0, 0, 0, 0.6),
-  rgba(9, 177, 219, 0.097)
-    );
-
-    backdrop-filter: blur(2px);
-    border: 1px solid rgba(255, 255, 255, 0.178);
-    width: 70%;
-    color: rgb(255, 255, 255);
-    border-radius: 15px;
-    box-shadow: inset 0px 0px 3px rgb(251, 251, 251), 0 0 25px rgb(250, 250, 250);
   justify-content: center;
 }
 
@@ -104,6 +90,8 @@ nav {
   border: 2px solid rgba(30, 143, 255, 0.733);
   width: fit-content;
   border-radius: 15px;
+  box-shadow: 30px 30px 30px rgba(6, 6, 7, .5);
+
 
 }
 
@@ -344,7 +332,9 @@ border: 2px double rgb(4, 158, 185);
   
       backdrop-filter: blur(2px);
       border: 1px solid rgba(255, 255, 255, 0.178);
+
 }
+
 
 
 
@@ -353,8 +343,8 @@ border: 2px double rgb(4, 158, 185);
   margin-left: -10px;
   padding-left: -10px;
   margin-top: -400px;
-  z-index: 1;
-  margin-bottom: -20px;
+  z-index: -1;
+  margin-bottom: -50px;
   height: 500px;
 }
 
@@ -593,6 +583,30 @@ figure:hover {
   font-size: 40px;
 }
 
+
+.aboutmetext p{
+  padding: 20px;
+width: fit-content;
+margin: auto;
+margin-top: 30px;
+
+font-size: 25px;
+background: linear-gradient(
+  to right bottom,
+    rgba(0, 0, 0, 0.6),
+  rgba(9, 177, 219, 0.097)
+    );
+
+    backdrop-filter: blur(2px);
+    border: 1px solid rgba(255, 255, 255, 0.178);
+    width: 100%;
+    max-width: 70%;
+    color: rgb(255, 255, 255);
+    border-radius: 15px;
+    box-shadow: inset 0px 0px 3px rgb(251, 251, 251), 0 0 25px rgb(250, 250, 250);
+}
+
+
 .aboutmetext p:hover {
   box-shadow: inset 0px 0px 15px rgb(251, 251, 251), 0 0 25px rgb(250, 250, 250);
   background: linear-gradient(90deg, #e3ffe7 0%, #7fd8fe 100%);
@@ -792,9 +806,6 @@ padding-left: 5px;
 
 
 
- .highlight {
-  animation: bounce-in 8s ease infinite;
-}
 
 
 
@@ -836,19 +847,16 @@ padding-left: 5px;
   padding: 20px;
   border-radius: 18px;
   background: linear-gradient(90deg, #1cb5e0d5 0%, #000851c2 100%);
-
+  justify-content: center;
 }
 
 .modal p {
- 
-  border: none;
-  color: #ffffff;
-  box-shadow: none;
-  background: none;
-
-    backdrop-filter: none;
+  margin: auto;
+  font-size: x-large;
+  width: fit-content;
+   font-family: 'handlee';
     border: none;
-    color: rgb(255, 255, 255);
+    color: rgb(248, 209, 137);
     border-radius: 15px;
     box-shadow: none;
   margin-top: 0;
@@ -863,9 +871,11 @@ padding-left: 5px;
   text-align: center;
   font-family: 'dela gothic one';
   align-items: center;
+  align-content: center;
   font-size: 35px;
   margin-right: 0;
   margin-bottom: 0;
+  
 }
 
 #open, #close {
@@ -879,17 +889,203 @@ padding-left: 5px;
   height: fit-content;
   padding: 5px;
   font-size: large;
+  font-family: 'handlee';
+}
+
+.show {
+  scale: .90;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+  height: fit-content;
 }
 
 .paraPop {
   width: 100%;
-  margin: 5px;
-  padding: 0;
+
+  padding: 10px;
+  font-size: larger;
 }
 
 #open:hover, #close:hover {
   scale: 1.05;
   cursor: pointer;
+}
+
+.show-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  align-items: center;
+  margin: 10px;
+}
+
+.show-block {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+
+.show-item h4 {
+  position: absolute;
+  margin: 35px 5px;
+  color: black;
+  font-size: large;
+  padding: 5px;
+  font-family: 'dela gothic one';
+  width: 200px;
+  text-align: center;
+}
+
+.show-img2 {
+  margin: 5xp;
+
+  border-radius: 50%;
+  height: 250px;
+  width: 250px;
+}
+
+.show-img {
+  margin: 5xp;
+
+  border-radius: 8px;
+  height: 250px;
+  width: 250px;
+}
+
+.weather-card {
+  width: 100%;
+  background: linear-gradient(135deg, #0098feac, rgba(20, 10, 116, 0.753));
+  color: #fff;
+  margin: auto;
+  border-radius: 25px;
+  padding: 10px 15px;
+  text-align: center;
+  border: 2px double rgba(255, 255, 255, 0.705);
+}
+
+.weather {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.spy {
+  height: 40px;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.search button {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  margin-left: 15px;
+}
+
+.search input {
+  border: 0;
+  outline: 0;
+  background: #ebfffc;
+  color: #555;
+  padding: 10px 25px;
+  height: 40px;
+  border-radius: 30px;
+  flex: 1;
+  font-size: 18px;
+  width: 80%;
+}
+
+.search {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+
+  margin:auto;
+}
+
+.weather-icon {
+  margin: auto;
+  max-width: 150px;
+}
+
+input {
+  display: flex;
+  margin: auto;
+  text-align: center;
+}
+
+.details {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-evenly;
+  margin-top: 10px;
+  color: white;
+  background-color: rgba(199, 227, 255, 0.5);
+  border-radius: 15px;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  align-items: center;
+
+  width: 100px;
+  height: fit-content;
+  padding: 10px;
+}
+
+.weather h1 {
+  font-size: 70px;
+  color: orange;
+  font-family: 'rajdhani';
+  margin: auto;
+}
+
+.degree {
+  font-size: 55px;
+}
+
+.col p {
+  font-size: small;
+}
+
+.weather h2 {
+  font-size: 50px;
+  filter: opacity(60%);
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+.temp {
+  margin: 0;
+  padding: 0;
+}
+
+.hum {
+  height: 40px;
+  width: 40px;
+  filter: opacity(45%);
+  padding: 0;
+  margin: 0;
+}
+
+.wind-speed {
+  height: 40px;
+  width: 60px;
 }
 
 .hide {
@@ -901,10 +1097,22 @@ padding-left: 5px;
   font-size: 80px;
   margin-right: 20px;
   margin-left: 0;
+  margin-top: -20px;
+  display: flex;
+  align-items: center;
+  height: fit-content;
 }
 
 .headshot {
   animation: roll-in 7s linear;
+}
+
+.highlight {
+  animation: bounce-in 8s ease infinite;
+}
+
+.modal {
+  animation: bounce-in 3s ease 1;
 }
 
 /* Keyframes */
@@ -1000,7 +1208,7 @@ padding-left: 5px;
     }
     
   
-    p {
+    .aboutmetext p {
     padding: 20px;
     text-indent: 10%;
     margin-left: 10px;
@@ -1121,7 +1329,7 @@ padding-left: 5px;
     .modal p {
       width: 99%;
       padding: 5px;
-      
+      font-size: large;
     }
 
     .skills {
@@ -1148,6 +1356,11 @@ padding-left: 5px;
       font-size: 25px;
       margin: 5px;
       margin-bottom: 10px;
+    }
+
+    .emoji {
+      font-size: 50px;
+      margin-left: 3px;
     }
 
     .skill-text h4{
@@ -1195,6 +1408,7 @@ padding-left: 5px;
       height: 150px;
       width: 100%;
       margin-top: -120px;
+      z-index: 0;
     }
   
     .headshot-mobile {
@@ -1220,6 +1434,7 @@ padding-left: 5px;
       width: 100%;
       height: fit-content;
       background-color: rgba(0, 0, 0, 0.852);
+    
     }
     
     
@@ -1231,7 +1446,7 @@ padding-left: 5px;
     padding: 20px;
     }
     
-    p {
+    .aboutmetext p {
         flex-direction: row;
         width: 80%;
         margin-bottom: 30px;
@@ -1541,7 +1756,144 @@ padding-left: 5px;
     }
 
 
+
+    .show {
+      scale: 1;
+     
+      flex-direction: column;
+      width: 80%;
+      margin: auto;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      height: fit-content;
+    }
     
+    
+    .show-item {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 90%;
+      align-items: center;
+      margin: 10px;
+    }
+    
+    
+    
+    
+    .show-item h4 {
+      position: absolute;
+      margin: 5px;
+      margin-top: 25px;
+      color: black;
+      font-size: large;
+      padding: 5px;
+      font-family: 'dela gothic one';
+      width: 200px;
+    }
+    
+    .show-img {
+    width: 200px;
+    height: 200px;
+    }
+
+    .show h4 {
+      font-size: large;
+      padding: 5px;
+      font-family: rajdhani;
+    }
+    
+    .weather-card {
+      width: 100%;
+      background: linear-gradient(135deg, #0098feac, rgba(20, 10, 116, 0.753));
+      color: #fff;
+      margin: auto;
+      border-radius: 25px;
+      padding: 20px 35px;
+      text-align: center;
+      border: 2px double rgba(255, 255, 255, 0.705);
+    }
+    
+    .weather {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin: auto;
+    }
+    
+    .spy {
+      height: 40px;
+      border-radius: 50%;
+      padding: 5px;
+    }
+    
+    .search button {
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      border: 0;
+      outline: 0;
+      cursor: pointer;
+      margin-top: 15px;
+    }
+
+
+
+    .search input {
+      
+      height: 40px;
+      border-radius: 30px;
+      flex: 1;
+      font-size: 18px;
+      width: 180px;
+    }
+    
+    .search {
+      margin: 20px auto;
+      margin-bottom: 0;
+    }
+    
+    .weather-icon {
+      margin: auto;
+      max-width: 150px;
+    }
+    
+    
+    .col {
+      display: none;      
+    }
+    
+    
+    .weather h1 {
+      font-size: 50px;
+      color: orange;
+      font-family: 'rajdhani';
+    }
+    
+    .degree {
+      font-size: 35px;
+    }
+    
+    
+    .weather h2 {
+      font-size: 30px;
+      filter: opacity(60%);
+    }
+    
+    
+    .hum {
+      height: 40px;
+      width: 40px;
+      filter: opacity(45%);
+    }
+    
+    .wind-speed {
+      height: 40px;
+      width: 60px;
+    }
     /* .gallery__item--14 {
       grid-column-start: 1;
       grid-column-end: 9;
