@@ -979,7 +979,7 @@ padding-left: 5px;
 
 .weather {
   display: flex;
-  justify-content: center;
+  justify-content:center;
   margin: auto;
 }
 
@@ -1107,16 +1107,19 @@ input {
 }
 
 .temp {
-  margin: 0;
-  padding: 0;
   width: 50%;
-}
-
-.humidity, .wind {
-
+  margin: auto 15px;
 }
 
 
+
+.error {
+  text-align: left;
+  margin-left: 10px;
+  font-size: 14px;
+  margin-top: 10px;
+  display: none;
+}
 
 .hide {
   display: none;

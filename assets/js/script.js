@@ -13,6 +13,13 @@ searchBtn.addEventListener("click", ()=> {
 
 async function checkWeather(city) {
     const response = await fetch(apiURL + `&q=${city}` + `&appid=${apiKey}`);
+
+    if (response.status == 404) {
+      document.querySelector(".error").style.display = "block";
+
+
+    } else {
+      document.querySelector(".error").style.display = "none";
     var data = await response.json();
 
     var temp = data.main.temp;
@@ -35,7 +42,12 @@ async function checkWeather(city) {
         weatherIcon.src = "assets/images/snow.png";
     } else if(data.weather[0].main == "Rain"){
         weatherIcon.src = "assets/images/rain.png";
-}};
+
+       
+
+}}
+
+};
 
 const myLocation = "san antonio";
 
