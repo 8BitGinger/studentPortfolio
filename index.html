@@ -75,24 +75,25 @@
   <div class="card" >  </div>
       <div class="show-item show-item-2">
         <div class="weather-card">
-          <div class="search">
-            <input type="text" placeholder="enter city name" spellcheck="false">
-            <button><img class="spy" src="./assets/images/search.png"></button>
-        </div>
+
           <div class="weather">
               <img src="./assets/images/sunny.png" class="weather-icon" alt="weathericon">
+              <div class="search">
+                <input type="text" placeholder="enter city name" spellcheck="false">
+                <button><img class="spy" src="./assets/images/search.png"></button>
+            </div>
+            <div class="row">
               <h1 class="temp">60°<span class="degree">f</span></h1>
               <h2 class="city">City Name</h2>
+            </div>
               <div class="details">
-                  <div class="col">
-                      <img src="./assets/images/wind-speed.png" alt="wind icon" class="wind-speed">
+                  <div class="col l-wind">
                       <p class="wind">15 mph</p>
-                      <p>Wind Speed</p>
+                   
                   </div>
                   <div class="col">
-                      <img src="./assets/images/humidity.png" alt="humidity icon" class="hum">
-                      <p class="humidity">50%</p>
-                      <p>Humidity</p>
+                      <p class="humidity r-hum">50%</p>
+                      <p>Hum</p>
                   </div>
 
               </div>
@@ -102,7 +103,7 @@
        <div id="music-player" class="show-item show-item-1">
         <div class="show-block">
         <h4>Available on:<br><span id="date-time">TIME-DATE</span></h4>
-          <img src="assets/images/calendar.png" class="show-img cal" alt="dayjs"> 
+          <img src="assets/images/calendar.png" class="show-img" alt="dayjs"> 
         </div>
           <img src="assets/images/youtube-placeholder.png" class="show-img" alt="dayjs"> 
      </div>
