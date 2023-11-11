@@ -518,6 +518,7 @@ filter: none;
   color: white;
   width: 100%;
   position: absolute;
+  margin: auto;
   margin-top:-120px;
   padding: 10px;
   font-size: x-large;
@@ -991,7 +992,7 @@ padding-left: 5px;
 }
 
 .weather-card {
-  scale: .7;
+  scale: .5;
   width: 100%;
   background: linear-gradient(135deg, #0098feac, rgba(20, 10, 116, 0.753));
   backdrop-filter: blur(2px);
@@ -999,8 +1000,8 @@ padding-left: 5px;
   color: #fff;
   margin: auto;
   border-radius: 50%;
-  margin-right: -50px;
-  margin-top: -50px;
+  margin-right: -80px;
+  margin-top: -100px;
   text-align: center;
   border: 2px double rgba(255, 255, 255, 0.705);
   overflow: hidden;
@@ -1087,6 +1088,7 @@ input {
 .row {
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 
 .col {
@@ -1249,7 +1251,51 @@ input {
 
 @media screen and (max-width: 992px) {
 
-  
+  .vid {
+    width: 80%;
+    height: fit-content;
+  }
+
+  .title {
+    font-size: 60px;
+    margin-left: 10px;
+  }
+
+  .skill-pic {
+    width: 80%;
+    height: 80%;
+  }
+
+  .skill-text {
+    font-size: large;
+  }
+
+  figure {
+    overflow: hidden;
+  }
+
+  .floatbox2 {
+    font-size: medium;
+    background: rgba(255, 255, 255, 0.258);
+    color: blue;
+  }
+
+  .banner-text {
+    font-size: larger;
+  }
+
+  .weather-card {
+    scale: .4;
+    margin: 0l
+  }
+
+
+.sidebar a {
+  font-size: 20px;
+  width: 100%;
+}
+
+
   
 }
   
