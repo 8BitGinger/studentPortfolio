@@ -7,7 +7,7 @@
     <!--This is for custom Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Dancing+Script&family=Dela+Gothic+One&family=Pixelify+Sans:wght@600&family=Rajdhani&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Dancing+Script&family=Dela+Gothic+One&family=Pixelify+Sans:wght@600&family=Handlee&family=Rajdhani&display=swap" rel="stylesheet">
     
     <!--This is for Font Awesome Icons-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
@@ -18,8 +18,13 @@
 </head>
 
 <body>
+
+
+
+
 <!--This is the header-->
     <header class="header">
+      
       <div class="topbar hide">
         <a href="#aboutme" class="nav-link">About</a>
         <br>
@@ -63,13 +68,41 @@
       <div class="modal-container" id="modal-container">
         <div class="modal skills">
           <h1>Pop ups aren't <span class="emoji">😎</span></h1>
-          <p class="paraPop">But neither is missing out on all the fun.  <br><br>This Portfolio has video and sound! <br><br>Make sure both are enabled for maximum enjoyment!</p>
+          <p class="paraPop">Neither is missing out on all the content.  <br><br>This Portfolio has video and sound! <br><br>Make sure both are enabled for maximum enjoyment!</p>
           <button id="close"> View My Portfolio!</button>
 
         </div>
       </div>
   </div>
-      
+        <!--This is the fixed weather mini-app in the corner-->
+  <div class="weather-card">
+
+    <div class="weather">
+        <img src="./assets/images/sunny.png" class="weather-icon" alt="weathericon">
+        <div class="search">
+          <input type="text" placeholder="enter city name" spellcheck="false">
+          <button><img class="spy" src="./assets/images/search.png"></button>
+          <div class="error">
+            <p>Invalid City Name</p>
+          </div>
+      </div>
+      <div class="row">
+        <h1 class="temp">60°<span class="degree">f</span></h1>
+        <h2 class="city">City Name</h2>
+      </div>
+        <div class="details">
+            <div class="col l-wind">
+                <p class="wind">15 mph</p>
+             
+            </div>
+            <div class="col">
+                <p class="humidity r-hum">50%</p>
+                <p>Hum</p>
+            </div>
+
+        </div>
+    </div>
+</div>
 
 <!--This is the Intro Paragraph-->
     <div id="aboutme"  class="aboutmetext" >
@@ -79,6 +112,7 @@
         <source src="./assets/video/ai-intro.mp4" type="video/mp4" alt="into video">
       Your browser does not support the video tag.
       </video>
+      <img class="construct" src="./assets/images/cautionTape.png">
       <br>In a nutshell, I am learning to create webesites that help orginzations address business challenges and meet their needs.  I will be able to manage everything from website navigation, to Third-Party APIs to thier UI/UX.  I will have expertise in both front end and back end development.    <br>
       <br>My main languages are HTML, CSS, and JavaScript, although I'm versed in jQuery and other popular CDNs.  I'm a lifelong learner and currently excited about the Bootcamp I am attending.  <br>
       <br>I love to spend time with my amazing girlfriend Adrian and loyal dog Jax, Listen to Apple Music, Play Xbox, and Code!</br>
@@ -166,7 +200,7 @@
           </figure>
 
           <figure class="gallery__item gallery__item--13">
-            <a href="#">
+            <a href="https://8bitginger.github.io/employeeManager/">
               <img src="assets/images/crm-Screenshot.png" class="gallery__img" alt="Portfolio Code Screenshot"> </a>
             <h3 class="floatbox2"> Employee Manager <br> <span class="line-2">BackEnd CRM</span></h3> 
           </figure>
@@ -174,9 +208,9 @@
   
 
         <figure class="gallery__item gallery__item--14 fp">
-            <a href="#">
-              <img src="assets/images/—Pngtree—vector illustration background of website_3540952.jpg" class="gallery__img" alt="Portfolio Code Screenshot"> </a>
-            <h3 class="floatbox2"> Future Project <br> <span class="line-2">Coming Soon...</span></h3> 
+            <a href="https://8bitginger.github.io/rpgMusicPlayer/">
+              <img src="assets/images/rpg-music-screenshot.png" class="gallery__img" alt="Portfolio Code Screenshot"> </a>
+            <h3 class="floatbox2"> RPG Music Player <br> <span class="line-2">Tutorial Build</span></h3> 
           </figure> 
 
           <figure class="gallery__item gallery__item--15 fp">
