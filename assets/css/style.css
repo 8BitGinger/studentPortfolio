@@ -1675,7 +1675,7 @@ input {
       margin-top: 0;
       display: grid;
       grid-template-columns: repeat(8, 1fr);
-      grid-template-rows: repeat(53, 5vw);
+      grid-template-rows: repeat(57, 5vw);
       margin-bottom: 5px;
       padding-bottom: 0;
     }
@@ -1689,10 +1689,16 @@ input {
 
     .gallery__item--z {
       font-size: 20px;
+      grid-column-start: 1;
+      grid-column-end: 9;
+      grid-row-start: 1;
+      grid-row-end: 2;
+      overflow: visible;
     }
 
     .subtitle {
       font-size: 20px;
+      
     }
 
     .gallery__item--1 {
@@ -1784,6 +1790,14 @@ input {
       grid-column-end: 9;
       grid-row-start: 50;
       grid-row-end: 54;
+    }
+
+    .gallery__item--14  {
+      grid-column-start: 1;
+      grid-column-end: 9;
+      grid-row-start: 54;
+      grid-row-end: 58;
+    
     }
 
     .fp {
