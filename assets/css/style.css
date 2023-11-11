@@ -842,7 +842,7 @@ padding-left: 5px;
   background-position: center;  display: flex;
   align-items: center;
   justify-content: center;
- z-index: 2;
+ z-index: 4;
 }
 
 .modal {
@@ -910,6 +910,17 @@ padding-left: 5px;
   margin-top: -60px;
   margin-bottom: 110px;
   justify-content: center;
+}
+
+
+
+.construct-work {
+  width: 100px;
+  height: 100px;
+  justify-content: center;
+  margin: auto;
+  margin-top: -10px;
+  margin-bottom: 10px;
 }
 
 .paraPop {
@@ -980,18 +991,20 @@ padding-left: 5px;
 }
 
 .weather-card {
-  scale: .5;
+  scale: .7;
   width: 100%;
   background: linear-gradient(135deg, #0098feac, rgba(20, 10, 116, 0.753));
+  backdrop-filter: blur(2px);
+
   color: #fff;
   margin: auto;
   border-radius: 50%;
-  margin-right: -70px;
-  margin-top: -70px;
+  margin-right: -50px;
+  margin-top: -50px;
   text-align: center;
   border: 2px double rgba(255, 255, 255, 0.705);
   overflow: hidden;
-  box-shadow: inset 0px 0px 15px rgb(251, 251, 251), 0 0 25px rgb(250, 250, 250);
+  box-shadow: inset 0px 0px 10px rgb(251, 251, 251), 0 0 15px rgb(250, 250, 250);
   height: 450px;
   width: 450px;
   position:absolute;
@@ -1133,7 +1146,6 @@ input {
   width: 50%;
   margin: auto 15px;
 }
-
 
 
 .error {
@@ -1898,7 +1910,7 @@ input {
     }
     
     .spy {
-      height: 30px;
+      height: 40px;
       border-radius: 50%;
       padding: 5px;
     }
@@ -1909,8 +1921,8 @@ input {
       margin: auto;
       align-items: center;
       border-radius: 50%;
-      width: 30px;
-      height: 30px;
+      width: 50px;
+      height: 50px;
       border: 0;
       outline: 0;
       cursor: pointer;
@@ -1923,7 +1935,7 @@ input {
 
     .search input {
       margin: 0;
-      height: 30px;
+      height: 45px;
       border-radius: 30px;
       flex: 1;
       font-size: 18px;
