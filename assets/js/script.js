@@ -57,8 +57,8 @@ checkWeather(myLocation);
 //This is the Time and Date Section
 const dateStamp = dayjs().format('MM - DD - YYYY');
 const timeStamp = dayjs().format('hh:mm');
-const dateEl = document.getElementById('date-time');
-dateEl.innerHTML = "<br>" + dateStamp + "<br>" + "at" + "<br>" + timeStamp;
+// const dateEl = document.getElementById('date-time');
+// dateEl.innerHTML = "<br>" + dateStamp + "<br>" + "at" + "<br>" + timeStamp;
 
 
 

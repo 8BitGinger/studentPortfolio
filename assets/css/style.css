@@ -275,10 +275,13 @@ background-size: cover;
 background-position: center;
 border-bottom: 3px double grey;
 
-justify-content: right;
+justify-content: left;
 align-content: center;
 text-align: right;
 padding: 20px;
+border-bottom-left-radius: 12px;
+border-bottom-right-radius: 12px;
+
 }
 
 
@@ -289,6 +292,7 @@ padding: 20px;
   background-color: rgba(0, 0, 0, 0.45);  
   backdrop-filter: blur(5px);
   border-radius: 8px;
+  width: 60%;
 }
 
 
@@ -548,6 +552,8 @@ figure:hover {
 }
 
 .sidebar {
+  display: flex;
+  flex-shrink:unset;
   text-decoration: none;
   justify-content: center;
   font-size: 25px;
@@ -896,13 +902,14 @@ padding-left: 5px;
   max-height: 350px;
   display: flex;
   flex-direction: row;
-  width: 100%;
+  width: 60%;
   margin: auto;
   text-align: center;
-  justify-content: center;
+  scale: .90;
   height: fit-content;
   margin-top: -60px;
-  margin-bottom: 80px;
+  margin-bottom: 110px;
+  justify-content: center;
 }
 
 .paraPop {
@@ -920,12 +927,21 @@ padding-left: 5px;
 .show-item {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   width: 35%;
   align-items: center;
   margin: 10px;
   scale: .70;
+}
+
+.show-item-1 {
+  margin: auto;
+  justify-content: left;
+}
+
+.show-item-2 {
+  margin: auto;
+  justify-content: right;
 }
 
 .show-block {
@@ -946,13 +962,7 @@ padding-left: 5px;
   text-align: center;
 }
 
-.show-img2 {
-  margin: 5xp;
 
-  border-radius: 50%;
-  height: 250px;
-  width: 250px;
-}
 
 .show-img {
   margin: 5xp;
@@ -962,19 +972,32 @@ padding-left: 5px;
   width: 250px;
 }
 
+.show-img-2 {
+
+
+  height: 350px;
+  width: 350px;
+}
+
 .weather-card {
+  scale: .5;
   width: 100%;
   background: linear-gradient(135deg, #0098feac, rgba(20, 10, 116, 0.753));
   color: #fff;
   margin: auto;
   border-radius: 50%;
-  padding: 10px 15px;
+  margin-right: -70px;
+  margin-top: -70px;
   text-align: center;
   border: 2px double rgba(255, 255, 255, 0.705);
   overflow: hidden;
   box-shadow: inset 0px 0px 15px rgb(251, 251, 251), 0 0 25px rgb(250, 250, 250);
   height: 450px;
   width: 450px;
+  position:absolute;
+  right: 0;
+  top: 0;
+  z-index: 2;
 }
 
 .weather {
@@ -1085,7 +1108,7 @@ input {
 }
 
 .col p {
-  font-size: medium;
+  font-size:x-large;
   text-align: center;
 }
 
@@ -1491,7 +1514,7 @@ input {
       margin: 20px;
       margin-top: 100px;
       font-size: larger;
-     
+      width: 100%;
     }
     
   
@@ -1849,59 +1872,86 @@ input {
     }
     
     .weather-card {
+      scale: .70;
+      position:static;
       width: 100%;
       background: linear-gradient(135deg, #0098feac, rgba(20, 10, 116, 0.753));
       color: #fff;
       margin: auto;
+      height: fit-content;
       border-radius: 25px;
       padding: 20px 35px;
       text-align: center;
       border: 2px double rgba(255, 255, 255, 0.705);
+      z-index: 0;
+      margin-top: -35px;
+      margin-bottom: -55px;
     }
     
     .weather {
       width: 100%;
       display: flex;
       justify-content: center;
-      margin: auto;
+      margin: 0;
+      padding: 0;
+      align-items: center;
     }
     
     .spy {
-      height: 40px;
+      height: 30px;
       border-radius: 50%;
       padding: 5px;
     }
     
     .search button {
+      display: flex;
+      justify-content: center;
+      margin: auto;
+      align-items: center;
       border-radius: 50%;
-      width: 40px;
-      height: 40px;
+      width: 30px;
+      height: 30px;
       border: 0;
       outline: 0;
       cursor: pointer;
-      margin-top: 15px;
+     margin-left: 5px;
     }
 
-
+    .details {
+      display: none;
+    }
 
     .search input {
-      
-      height: 40px;
+      margin: 0;
+      height: 30px;
       border-radius: 30px;
       flex: 1;
       font-size: 18px;
-      width: 180px;
+      width: 13px;
     }
     
     .search {
-      margin: 0px auto;
+      display: flex;
+      margin: auto;
+      text-align: center;
+      justify-content: center;
+      
       margin-bottom: 0;
+    }
+
+    .row {
+      margin: 0;
+     
     }
     
     .weather-icon {
       margin: auto;
       max-width: 150px;
+      margin-top: -25px;
+      margin-bottom: -25px
     }
+
+
     
     
     .col {
