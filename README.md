@@ -23,6 +23,7 @@ A project to create a landing page to display current and past projects to prosp
 ## Screenshot
 > ![screenshot](./assets/images/portfolio-screenshot.png)
 > ![screenshot](./assets/images/portfolio-screenshot-mobile.png)
+> ![screenshot](./assets/images/portfolio-screenshot-tablet.PNG)
 
 
 ---

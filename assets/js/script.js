@@ -81,7 +81,7 @@ close.addEventListener('click', () => {
 
 
 //This is all the Sound JS
-$('.link').on('click', function () { 
+$('.icon').on('click', function () { 
     var obj = document.createElement('audio');
     obj.src = './assets/audio/clicks-main.mp3'; 
     obj.play(); 

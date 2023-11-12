@@ -67,10 +67,7 @@ font-family: 'Rajdhani';
   
 }
 
-.sidebar a {
-  font-family: 'caveat';
-  font-size: 35px;
-}
+
 
 nav {
   display: flex;
@@ -107,18 +104,16 @@ left:0;
 overflow-x:hidden;
 display: flex;
 flex-wrap: wrap;
-flex-direction: row;
+flex-direction: column;
 background-image: url(../images/blueBackLines.png);
 background-size: auto;
 text-align: center;
-justify-content: center;
+justify-content: space-between;
 margin: auto;
 font-family: 'caveat';
 }
 
-aside a {
- 
-}
+
 
 #ryan {
   background: none;
@@ -555,13 +550,20 @@ figure:hover {
 
 .sidebar {
   display: flex;
-  flex-shrink:unset;
+  flex-shrink: calc();
   text-decoration: none;
-  justify-content: center;
+  justify-content:space-around;
+  align-items: center;
   font-size: 25px;
   color: #818181;
   margin-top: 20px;
+  height: 100%;
 }
+
+
+
+
+
 
 
 
@@ -577,14 +579,20 @@ figure:hover {
   text-align: center;
   font-size: 30px;
   padding: 5px;
-
+  width: 100%;
+  
 }
 
 .sidebar a:hover {
   text-decoration: underline;
   color: orange;
   transition: ease-in 0.1s;
+  scale: 1.05;
   
+}
+
+.sidebar a:active {
+  scale: .95;
 }
 
 .icon {
@@ -639,6 +647,10 @@ background: linear-gradient(
   transition: ease-in 0.2s;
   color: dodgerblue;
   
+}
+
+.footer a:active {
+  scale: .95;
 }
 
 .contactpic{
@@ -917,12 +929,15 @@ padding-left: 5px;
 
 
 .construct-work {
-  width: 100px;
-  height: 100px;
+  position: absolute;
+  width: 80%;
+  height: 80%;
   justify-content: center;
   margin: auto;
   margin-top: -10px;
   margin-bottom: 10px;
+  z-index: -2;
+  filter: opacity(40%);
 }
 
 .paraPop {
@@ -1186,6 +1201,8 @@ input {
   animation: bounce-in 3s ease 1;
 }
 
+
+
 /* Keyframes */
 @keyframes wiggle {
   0%, 7% {
@@ -1277,8 +1294,7 @@ input {
 
   .floatbox2 {
     font-size: medium;
-    background: rgba(255, 255, 255, 0.258);
-    color: blue;
+
   }
 
   .banner-text {
