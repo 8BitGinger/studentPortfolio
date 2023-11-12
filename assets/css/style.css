@@ -167,11 +167,7 @@ h3 {
   animation: center 2s ease infinite;
 }
 
-.center h4:hover {
-  color: #e60a0a;
-  scale: 1.02;
-  transition: ease-in-out 0.2s;
-}
+
 
 h2 {
   color: #ffffff;
@@ -361,6 +357,7 @@ border: 2px double rgb(4, 158, 185);
 
 .gallery__img:hover {
 filter: none;
+
 }
 
 .gallery__item {
@@ -580,15 +577,16 @@ figure:hover {
   font-size: 30px;
   padding: 5px;
   width: 100%;
-  
+
 }
 
 .sidebar a:hover {
   text-decoration: underline;
   color: orange;
-  transition: ease-in 0.1s;
+  transition: ease-in 0.3s;
   scale: 1.05;
-  
+  text-shadow: 10px 10px 10px black;
+
 }
 
 .sidebar a:active {
@@ -623,12 +621,7 @@ background: linear-gradient(
 }
 
 
-.aboutmetext p:hover {
-  box-shadow: inset 0px 0px 15px rgb(251, 251, 251), 0 0 25px rgb(250, 250, 250);
-  background: linear-gradient(90deg, #e3ffe7 0%, #7fd8fe 100%);
-  color: navy;
-  transition: ease-in 0.5s;
-}
+
 
 .main-image {
   background-position: center;
@@ -646,27 +639,15 @@ background: linear-gradient(
   scale: 1.1;
   transition: ease-in 0.2s;
   color: dodgerblue;
-  
+  text-shadow: 10px 10px 10px black;
+
 }
 
 .footer a:active {
   scale: .95;
 }
 
-.contactpic{
-  max-width: 25%;
-  max-height: 150px;
-  border: none;
-  border-radius: 100%;
-  margin: 3px;
-}
 
-
-
-.contactpic:hover {
-  scale: 1.1;
-  transition: ease-in 0.3s;
-}
 
 .subtitle2 {
   width: 100%;
@@ -794,6 +775,8 @@ padding-left: 5px;
   margin-left: -3px;
   width: 100%;
   -webkit-text-stroke: orange 1px;
+  text-shadow: 20px 20px 20px black;
+
 }
 
 .section-title {
@@ -866,21 +849,24 @@ padding-left: 5px;
   max-width: 100%;
   padding: 20px;
   border-radius: 18px;
-  background: linear-gradient(90deg, #1cb5e0d5 0%, #000851c2 100%);
+  background: linear-gradient(90deg, #1cb5e0e3 0%, #000851d9 100%);
+  backdrop-filter: blur(3px) grayscale(50%);
   justify-content: center;
+  overflow: hidden;
 }
 
 .modal p {
   margin: auto;
-  font-size: x-large;
+  font-size: larger;
   width: fit-content;
    font-family: 'handlee';
     border: none;
-    color: rgb(248, 209, 137);
+    color: rgb(14, 44, 135);
+    -webkit-text-stroke: 1px white;
     border-radius: 15px;
     box-shadow: none;
   margin-top: 0;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 
 }
 
@@ -892,9 +878,11 @@ padding-left: 5px;
   font-family: 'dela gothic one';
   align-items: center;
   align-content: center;
-  font-size: 35px;
+  font-size: 45px;
   margin-right: 0;
   margin-bottom: 0;
+  color: rgb(0, 103, 238);
+  -webkit-text-stroke: 1px rgb(255, 180, 30);
   
 }
 
@@ -912,38 +900,28 @@ padding-left: 5px;
   font-family: 'handlee';
 }
 
-.show {
-  max-height: 350px;
-  display: flex;
-  flex-direction: row;
-  width: 60%;
-  margin: auto;
-  text-align: center;
-  scale: .90;
-  height: fit-content;
-  margin-top: -60px;
-  margin-bottom: 110px;
-  justify-content: center;
+.tape {
+    width: 100%;
+    height: 600px;
+    position: absolute;
+    z-index: -1;
 }
 
 
 
 .construct-work {
   position: absolute;
-  width: 80%;
-  height: 80%;
+  width: 90%;
+  height: fit-content;
   justify-content: center;
   margin: auto;
-  margin-top: -10px;
-  margin-bottom: 10px;
   z-index: -2;
-  filter: opacity(40%);
+  filter: opacity(20%);
 }
 
 .paraPop {
   width: 100%;
-
-  padding: 10px;
+  padding: 5px;
   font-size: larger;
 }
 
@@ -1122,6 +1100,8 @@ input {
   color: orange;
   font-family: 'rajdhani';
   margin: auto;
+  text-shadow: 10px 10px 10px black;
+
 }
 
 .degree {
@@ -1443,8 +1423,13 @@ input {
 
     }
 
+    .modal {
+      scale: .90;
+
+    }
+
     .modal h1 {
-      font-size: 20px;
+      font-size: 25px;
       margin-left: 10px;
       
     }
@@ -1533,6 +1518,13 @@ input {
       margin-top: -120px;
       z-index: 0;
     }
+
+    .construct-work {
+      bottom: 0;
+      height: fit-content;
+      width: 100%;
+      margin-left: -25px;
+    }
   
     .headshot-mobile {
       border-radius: 50%;
@@ -1560,6 +1552,16 @@ input {
     
     }
     
+    .paraPop {
+      padding: 0;
+      margin: 0;
+      font-size: medium;
+    }
+
+    .construct-para {
+      padding: 0;
+      margin: 0;
+    }
     
     .banner {
     
@@ -1678,7 +1680,6 @@ input {
     .title {
       margin: auto;
       width: 100vw;
-      
       text-align: center;
       margin-top: 100px;
       font-size: 40px;
@@ -1891,6 +1892,8 @@ input {
     .topbar a:hover {
       scale: 1.1;
       color: gray;
+      text-shadow: 5px 5px 5px black;
+
     }
 
    .footer a {
@@ -1916,48 +1919,7 @@ input {
       margin-bottom: -0px;
     }
     
-    
-    .show-item {
-      scale: .70;
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      align-items: center;
-      margin: 10px;
-      margin-top: -30px;
-      margin-bottom: 0;
-    }
-    
-    .show-item-1 {
-      display: none;
-    }
-    
-    
-    .show-item h4 {
-      position: absolute;
-      margin: 5px;
-      margin-top: 25px;
-      color: black;
-      font-size: large;
-      padding: 5px;
-      font-family: 'dela gothic one';
-      width: 200px;
-    }
-    
-    .show-img {
-  
-    width: 200px;
-    height: 200px;
-    }
-
-    .show h4 {
-      font-size: large;
-      padding: 5px;
-      font-family: rajdhani;
-    }
+   
     
     .weather-card {
       scale: .80;
