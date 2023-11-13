@@ -331,7 +331,9 @@ border: 2px double rgb(4, 158, 185);
 
 }
 
-
+.construct-para p{
+  color: yellow;
+}
 
 
 .construct {
@@ -863,14 +865,16 @@ padding-left: 5px;
   width: fit-content;
    font-family: 'handlee';
     border: none;
-    color: rgb(14, 44, 135);
-    -webkit-text-stroke: 1px white;
+    color: white;
+
     border-radius: 15px;
     box-shadow: none;
   margin-top: 0;
   margin-bottom: 20px;
 
 }
+
+
 
 .modal h1 {
   display: flex;
@@ -925,6 +929,8 @@ padding-left: 5px;
   width: 100%;
   padding: 5px;
   font-size: larger;
+ color: white;
+
 }
 
 #open:hover, #close:hover {
@@ -1004,9 +1010,11 @@ padding-left: 5px;
   height: 450px;
   width: 450px;
   margin-top: -200px;
-  margin-right: -50px;
+ 
   z-index: 2;
 }
+
+
 
 .weather {
   display: flex;
