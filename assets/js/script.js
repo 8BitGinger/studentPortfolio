@@ -8,7 +8,7 @@ const searchBtn = document.querySelector(".search button");
 const weatherIcon = document.querySelector(".weather-icon");
 
 searchBtn.addEventListener("click", ()=> {
-    checkWeather(searchBtn.value);
+    checkWeather(searchBox.value);
 })
 
 async function checkWeather(city) {
