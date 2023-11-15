@@ -1028,25 +1028,35 @@ padding-left: 5px;
 
 .search button {
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  border: 0;
+  width: 50px;
+  height: 50px;
+  border: 2px solid blue;
   outline: 0;
   cursor: pointer;
   margin-left: 15px;
+  background: rgb(193, 242, 255);
+
 }
 
 .search input {
   border: 0;
   outline: 0;
-  background: #ebfffc;
   color: #555;
-  padding: 10px 25px;
-  height: 30px;
+  padding: 5px 15px;
   border-radius: 30px;
   flex: 1;
-  font-size: 18px;
   width: 80%;
+  height: 50px;
+  font-size: 22px;
+  color: dodgerblue;
+  background: rgb(193, 242, 255);
+  border: 2px solid blue;
+
+}
+
+.search input::placeholder {
+  color: dodgerblue;
+  font-size: 22px;
 }
 
 .search {
@@ -1076,12 +1086,11 @@ input {
   flex-direction: row;
   width: 100%;
   justify-content: space-evenly;
-
+  
   margin-bottom: 20px;
   margin-top: 0;
   color: white;
-  background-color: rgba(199, 227, 255, 0.5);
-  border-radius: 15px;
+
   
 }
 
@@ -1109,6 +1118,8 @@ input {
   text-shadow: 10px 10px 10px black;
 
 }
+
+
 
 .degree {
   font-size: 55px;
@@ -1369,6 +1380,8 @@ input {
     }
 
     
+
+    
     .orange {
       font-size: 25px;
       color: rgb(220, 149, 17);
@@ -1379,7 +1392,8 @@ input {
       padding: 2px;
       margin: auto;
       margin-top: 20px;
-      padding-right: 20px;
+      padding-right: 11px;
+      padding-left: 6px;
       align-items: center;
       letter-spacing: -5px;
 
@@ -1387,13 +1401,14 @@ input {
     }
     
     .matchOrange {
-      font-size: 12px;
+      font-size: 15px;
       color: rgb(220, 149, 17);
         width: 50%;
         line-height: 1;
         margin-right: 12px;
         align-items:end;
         margin-top: 10px;
+        padding: 0;
     }
     
     footer {
@@ -1451,10 +1466,7 @@ input {
     }
 
     .skills {
-      flex-direction: column;
-      margin-top: 20px;
-      width: 80%;
-      margin-bottom: 25px;
+      display: none;
     }
 
     .skill {
@@ -1541,7 +1553,7 @@ input {
       display:flex;
       margin: auto;
       text-align: center;
-      width: 120px;
+      width: 160px;
       justify-content: center;
       border: 2px solid rgba(255, 255, 255, 0.527);
       margin-top: -20px;
@@ -1581,8 +1593,22 @@ input {
     padding: 20px;
     }
 
-    .aboutmetext div {
+    div {
+      padding: 0;
+      margin: 0;
+    }
+
+
+    .aboutmetext {
+      margin: 0;
+      padding: 0;
       width: 100%;
+    }
+    
+    p {
+      width: 98%;
+      padding: 5px;
+      margin: 0;
     }
     
     .aboutmetext p {
@@ -1591,7 +1617,8 @@ input {
         margin: auto;
         margin-bottom: 30px;
       font-size: 17px;
-      padding: 8px;
+      padding: 15px;
+      font-family: 'dela gothic one';
     }
 
 
@@ -1613,7 +1640,7 @@ input {
     .gallery {
       
       grid-gap: 25px;
-      width: 80%;
+      width: 75%;
       text-align: center;
       margin: auto;
       margin-top: 150px;
@@ -1884,7 +1911,7 @@ input {
       height: 60px;
       background-image: url(../images/blueBackLines.png);
       background-size: cover;
-      align-content: center;
+      align-content:flex-start;
       border-top-left-radius: 8px;
       border-top-right-radius: 8px;
       z-index: 2;
@@ -1932,19 +1959,24 @@ input {
    
     
     .weather-card {
-      scale: .80;
+      scale: .70;
       position:static;
       width: 100%;
-      background: linear-gradient(135deg, #0098feac, rgba(20, 10, 116, 0.753));
       color: #fff;
+      background: none;
       margin: auto;
-      height: 350px;
-      width: 350px;
-     
-      border-radius: 50%;
+      border-radius: 0;
+      background: linear-gradient(
+        to left bottom,
+          rgba(0, 0, 0, 0.6),
+        rgba(9, 177, 219, 0.097)
+          );
+      
+          backdrop-filter: blur(2px);
+          border: 1px solid rgba(255, 255, 255, 0.178);
+     border-radius: 20px;
       padding: 10px 25px;
       text-align: center;
-      border: 2px double rgba(255, 255, 255, 0.705);
       z-index: 0;
       margin-top: -25px;
      
@@ -1977,12 +2009,18 @@ input {
       outline: 0;
       cursor: pointer;
      margin-left: 5px;
+     background-color: #ebfffcb0;
+     border: 3px solid rgba(30, 143, 255, 0.656);
+
     }
 
     .details {
-      display: flex;
-      background-color: none;
-      border-radius: 0;
+      display: none;
+    }
+
+    .search input::placeholder {
+      color: white;
+      font-size: 25px;
     }
 
     .search input {
@@ -1990,8 +2028,10 @@ input {
       height: 45px;
       border-radius: 30px;
       flex: 1;
-      font-size: 14px;
+      font-size: 25px;
       width: 13px;
+      background-color: transparent;
+      border: 3px solid dodgerblue;
       
     }
     
@@ -2002,6 +2042,8 @@ input {
       justify-content: center;
       width: 100%;
       margin-bottom: 0;
+      margin-top: -35px;
+      
     }
 
     .row {
@@ -2031,7 +2073,7 @@ input {
  
     
     .weather h1 {
-      font-size: 50px;
+      font-size: 80px;
       color: orange;
       font-family: 'rajdhani';
     }
@@ -2042,8 +2084,9 @@ input {
     
     
     .weather h2 {
-      font-size: 30px;
-      filter: opacity(60%);
+      font-size: 40px;
+      filter: opacity(70%);
+      color: rgb(160, 208, 255);
     }
     
     
