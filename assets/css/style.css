@@ -53,7 +53,7 @@ flex-wrap: wrap;
 flex-direction: column;
 
 text-align: center;
-font-family: 'Rajdhani';
+font-family: 'Dela Gothic One';
   justify-content: center;
 }
 
@@ -177,8 +177,14 @@ h1 {
   width: 100%;
 font-size: 80px;
 padding-bottom: 25px;
-font-family: 'pixelify sans';
+
+
 justify-content: left;
+}
+
+.title h1 {
+  font-family: 'pixelify sans';
+
 }
 
 nav {
@@ -604,7 +610,7 @@ width: fit-content;
 margin: auto;
 margin-top: 30px;
 
-font-size: 25px;
+font-size: 22px;
 background: linear-gradient(
   to right bottom,
     rgba(0, 0, 0, 0.6),
@@ -779,6 +785,9 @@ padding-left: 5px;
   -webkit-text-stroke: orange 1px;
   text-shadow: 20px 20px 20px black;
 
+    font-family: 'pixelify sans';
+  
+  
 }
 
 .section-title {
@@ -1146,6 +1155,7 @@ input {
 .col p {
   font-size:x-large;
   text-align: center;
+  font-family: 'rajdhani';
 }
 
 .weather h2 {
